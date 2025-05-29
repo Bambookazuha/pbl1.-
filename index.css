@@ -1,0 +1,384 @@
+.hero {
+    position: relative;
+    background: url(image/hsbg.png) no-repeat center center/cover;
+    background-color: #87a750;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(122, 179, 132, 0);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+}
+
+.hero-content h2 {
+    font-size: 90px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.hero-content h3 {
+    font-size: 50px;
+    text-shadow: 0 0 10px black;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.btn.e-button {
+  margin-top: 1.5rem;
+  background-color: #f5fffa;
+  color:#2e3c21;
+  border: 3px solid #2e3c21;
+  padding: 10px 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn.e-button:hover {
+  background-color:  #2e3c21;
+  transform: scale(1.05);
+}
+.btn.g-button{
+  background-color: #f5fffa;
+  color:#2e3c21;
+  border: 3px solid #2e3c21;
+  padding: 1rem 2.5rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn.g-button:hover{
+  background-color: #2e3c21 ;
+  transform: scale(1.05);
+  color:#ffffff;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content h3 {
+        font-size: 24px;
+    }
+
+    .hero-content button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+    }
+
+    .hero-content button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+p {
+    font-size: 17px;
+}
+.s-container:hover {
+    box-shadow: 0 0 30px #91b257;
+}
+.s-container {
+    background-color: #d9efdac1;
+    margin: 20px 0;
+    min-height: 250px;
+}
+.container-fluid {
+  height: 300px;
+}
+.image-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.s-container p {
+    color: #2e3c21;
+    line-height: 1.6;
+}
+.s-container h3 {
+    color: #2e3c21;
+}
+.btn.t-button {
+  margin-top: 1.5rem;
+  background-color: #f5fffa;
+  color:#2e3c21;
+  border: 3px solid #2e3c21;
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.btn.t-button:hover {
+  color: white;
+  background-color: #2e3c21;
+  transform: scale(1.05);
+}
+.btn.t-button a:hover {
+  background-color: #f5fffa;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #3b5732;
+  margin: auto;
+}
+
+.card-body {
+  width: 200px;
+  height: 240px;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 5px 5px black;
+}
+.card:hover {
+  box-shadow: 0 4px 4px black;
+}
+.garden {
+  background-color: #d9efda;
+  color: white;
+}
+@media (max-width: 767.98px) {
+  .garden h3 {
+    font-size: 24px;
+  }
+  .garden p {
+    font-size: 16px;
+  }
+}
+
+.flower-section h1 {
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+   margin-bottom: 30px;
+}
+
+.flower-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  justify-content: center;
+}
+
+.img-style {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+.flower-row {
+  flex-direction: column;
+  align-items: center;
+  }
+
+.img-style {
+  width: 20%;
+  height: auto;
+  }
+
+.overlay-container {
+  width: 50%;
+  height: auto;
+  }
+
+.overlay-text {
+  font-size: 1.2rem;
+  }
+}
+
+.overlay-container {
+  position: relative;
+  width: 200px;
+  height: 280px; 
+  overflow: hidden;
+  cursor: pointer;
+}
+.overlay-container:hover {
+  box-shadow: 0 0 50px #91b257;
+  transform: scale(1.02);
+}
+.overlay-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  z-index: 1;
+  transition: 0.3s ease; 
+}
+
+.overlay-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  text-align:center;
+  z-index: 2;
+}
+
+/* Optional: overlay darkens on hover */
+.overlay-container:hover::before {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+.feedback-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.feedback-section h2 {
+  font-size: 2.2rem;
+  color: #2d6a4f;
+  margin-bottom: 40px;
+}
+
+.feedback-section .t-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.t-card {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 400px;
+  height: 250px;
+  box-shadow: 0 0 5px rgba(74, 138, 80, 0.817);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.t-card:hover {
+  transform: translateY(-5px);
+}
+    
+.t-card p {
+  font-style: italic;
+  color: #344e41;
+  margin-bottom: 15px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.customer-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.customer-info strong {
+  color: #1b4332;
+  font-size: 1rem;
+}
+
+.customer-info span {
+  color: #6c757d;
+  font-size: 0.875rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 992px) {
+  .t-card {
+  padding: 10px;
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

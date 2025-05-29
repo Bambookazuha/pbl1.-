@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growing Roots | Why Gardening Helps</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="image/favi.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <!--Bootstrap Icon CDN Links-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--Bootstrap CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--External css links-->
+    <link rel="stylesheet" href="whygardeninghelpsstyle.css" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <a id="top"></a>
+
+   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active-state" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WGH Section -->
+    <div class="main-section">
+      <div class="container">
+        <div class="row align-items-center flex-lg-row">
+          <!-- WGH Text Content -->
+          <div
+            class="col-lg-6 text-center text-lg-start"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h2>Why <span class="highlight">Gardening</span><br />Helps</h2>
+            <p>
+              Discover the profound impact of gardening on environmental health
+              and sustainability. Gardening not only enhances the beauty of your
+              surroundings but also provides numerous environmental and mental
+              health benefits.
+            </p>
+            <a href="#towgh">
+              <button class="btn btn-custom mb-3 mt-3">
+                Discover the Benefits
+              </button>
+            </a>
+          </div>
+
+          <!-- WGH Image Grid -->
+          <div
+            class="col-lg-6 mb-md-5 mb-sm-5"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="image/wghhero1.png"
+                  alt="plant 1"
+                  width="auto"
+                  height="100%"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="image/wghhero2.png"
+                  alt="plant 2"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="col-6 mt-3">
+                <img
+                  class="img-fluid"
+                  src="image/wghhero3.png"
+                  alt="plant 3"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+              <div class="col-6 mt-3">
+                <img
+                  class="img-fluid"
+                  src="image/wghhero4.png"
+                  alt="plant 4"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="discover" id="towgh" style="background-color: #f5fffa">
+      <img
+        src="image/wghnexthero.png"
+        alt="gardening"
+        width="100%"
+        height="500px"
+        class="mb-0"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      />
+
+      <div class="overlay-text">
+        Discover the profound impact of gardening on environmental health and
+        sustainability.
+      </div>
+      <div class="overlay-box row justify-content-center wgh-grid">
+        <div
+          class="col-12 col-md-6 wgh-item"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
+          <a href="#tolapg">
+            <img src="image/introlapg.png" alt="Boosts Physical Strength" />
+            <h3>Learning and Personal Growth</h3>
+          </a>
+        </div>
+        <div
+          class="col-12 col-md-6 wgh-item"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
+          <a href="#tomhb">
+            <img src="image/intromhb.png" alt="Increases Flexibility" />
+            <h3>Mental Health Benefits</h3>
+          </a>
+        </div>
+
+        <div
+          class="col-12 col-md-6 wgh-item"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
+          <a href="#tophb">
+            <img src="image/introphb.png" alt="Burns Calories" />
+            <h3>Physical Health Benefits</h3>
+          </a>
+        </div>
+        <div
+          class="col-12 col-md-6 wgh-item"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
+          <a href="#toeb">
+            <img src="image/introeb.png" alt="Burns Calories" />
+            <h3>Environmental Benefits</h3>
+          </a>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <!-- LAPG Text section -->
+    <div class="lapgsection" id="tolapg">
+      <div class="container lapgcon" data-aos="fade-up" data-aos-duration="800">
+        <div class="row mt-sm-5">
+          <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <span class="highlight"> Learning </span><br />and Personal Growth
+          </h2>
+
+          <div class="col-lg-5"></div>
+
+          <div class="col-lg-7 mt-0 mb-md-5">
+            <div
+              class="accordion accordion-flush mb-sm-5"
+              id="accordion-parent"
+            >
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="600"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion1"
+                  >
+                    Teaches Patience and Responsibility
+                  </button>
+                </h2>
+
+                <div
+                  class="collapse accordion-collapse show"
+                  id="accordion1"
+                  data-bs-parent="#accordion-parent"
+                >
+                  <div class="accordion-body">
+                    <div class="row justify-content-center">
+                      <p>
+                        Irrigation and care require time, consistency, and
+                        attention — this promotes self-discipline and delayed
+                        gratification. You learn to observe, adjust, and respond
+                        to plant needs, as if it were a problem-solving task.
+                      </p>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg1.jpeg"
+                          alt="Growth"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg2.jpeg"
+                          alt="learn"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg3.jpeg"
+                          alt="personal"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="600"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion2"
+                  >
+                    Connects You to Science
+                  </button>
+                </h2>
+
+                <div
+                  class="collapse accordion-collapse"
+                  id="accordion2"
+                  data-bs-parent="#accordion-parent"
+                >
+                  <div class="accordion-body">
+                    <div class="row justify-content-center">
+                      <p>
+                        You naturally learn about: Photosynthesis, Plant life
+                        cycles, Soil pH and nutrients, Weather and ecosystems.
+                        This can boost curiosity in biology, chemistry, and
+                        earth science.
+                      </p>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg4.jpeg"
+                          alt="Growth"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg5.jpeg"
+                          alt="learn"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg6.jpeg"
+                          alt="personal"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="600"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion3"
+                  >
+                    Improves Focus and Observation
+                  </button>
+                </h2>
+
+                <div
+                  class="collapse accordion-collapse"
+                  id="accordion3"
+                  data-bs-parent="#accordion-parent"
+                >
+                  <div class="accordion-body">
+                    <div class="row justify-content-center">
+                      <p>
+                        Gardening requires noticing small changes (e.g.,
+                        yellowing leaves = nutrient issue). Encourages critical
+                        thinking: Why did a plant fail? Too little water? Not
+                        enough sun?
+                      </p>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg7.jpeg"
+                          alt="Growth"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg8.png"
+                          alt="learn"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg9.jpeg"
+                          alt="personal"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="600"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion4"
+                  >
+                    Builds Confidence
+                  </button>
+                </h2>
+
+                <div
+                  class="collapse accordion-collapse"
+                  id="accordion4"
+                  data-bs-parent="#accordion-parent"
+                >
+                  <div class="accordion-body">
+                    <div class="row justify-content-center">
+                      <p>
+                        Seeing the result of your work (a flower blooming, a
+                        veggie sprouting) gives real satisfaction and
+                        confidence.
+                      </p>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg10.jpeg"
+                          alt="Growth"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg11.jpeg"
+                          alt="learn"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+
+                      <div class="col-md-4 col-sm-4">
+                        <img
+                          src="image/lapg12.jpeg"
+                          alt="personal"
+                          width="100%"
+                          height="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MHB Text section -->
+    <div class="mhbsection" id="tomhb">
+      <div class="container mhbcon">
+        <div class="row" data-aos="fade-up" data-aos-duration="800">
+          <h2 class="mb-5 mt-sm-5" data-aos="fade-up" duration 800ms>
+            <span class="highlight">Mental Health</span> Benefits<br />
+          </h2>
+          <div class="col-lg-6">
+            <ul class="flex-column nav nav-pills justify-content-center">
+              <li
+                class="nav-item"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+              >
+                <a href="#rsaa" class="nav-link active" data-bs-toggle="tab"
+                  >Reduces Stress and Anxiety <br /><br />
+                  <span>
+                    Scientifically, brain serotonin increased due to exposure to
+                    soil bacteria Mycobacterium vaccae has been found to
+                    decrease anxiety. Gardening offers a soothing routine, such
+                    as watering or trimming, which is beneficial for mental
+                    clarity.
+                  </span></a
+                >
+              </li>
+              <li
+                class="nav-item"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+              >
+                <a href="#imaf" class="nav-link" data-bs-toggle="tab"
+                  >Improves Mood and Focus <br /><br />
+                  <span>
+                    According to a study in the Journal of Health Psychology, it
+                    was discovered that gardening decreased cortisol levels more
+                    than indoor reading. Gardening increases attention span,
+                    especially helpful for those with ADHD.
+                  </span></a
+                >
+              </li>
+              <li
+                class="nav-item mb-md-3 mb-sm-3"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+              >
+                <a href="#tu" class="nav-link" data-bs-toggle="tab"
+                  >Therapeutic Use <br /><br />
+                  <span>
+                    Gardening is utilized in horticultural therapy — it's even
+                    prescribed in other countries for patients experiencing
+                    depression or trauma.Tending to plants teaches self-esteem
+                    and gives one a sense of purpose.
+                  </span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="tab-content">
+              <div class="tab-pane active" id="rsaa">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img
+                      src="image/mhbrs1.jpg"
+                      alt="stress"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="image/mhbrs2.png"
+                      alt="anxiety"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="imaf">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img
+                      src="image/imaf1.png"
+                      alt="mode"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="image/imaf2.png"
+                      alt="focus"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="tu">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <img
+                      src="image/tu2.webp"
+                      alt="mode"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <img
+                      src="image/tu1.jpeg"
+                      alt="focus"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHB Text section -->
+    <div class="phb-section" id="tophb">
+      <div class="phb-content container">
+        <div
+          class="row justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        >
+          <h2
+            class="mb-5 mt-sm-5"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            <span class="highlight">Physical Health</span> Benefits<br />
+          </h2>
+          <div
+            class="col-md-6 phb-box phb-box1"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <img src="image/phb1.png" alt="Exercise" />
+            <h3>Exercise and Movement</h3>
+            <p style="color: white">
+              Gardening activities like digging and lifting improve muscle
+              strength and flexibility.
+            </p>
+          </div>
+
+          <div
+            class="col-md-6 phb-box phb-box2"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <img src="image/phb2.png" alt="Vitamin D" />
+            <h3>Sunlight Exposure</h3>
+            <p style="color: white">
+              Gardening provides vitamin D, which strengthens bones and enhances
+              mood.
+            </p>
+          </div>
+
+          <div
+            class="col-md-6 phb-box phb-box3"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <img src="image/phb3.png" alt="Calorie Burn" />
+            <h3>Burns Calories</h3>
+            <p style="color: white">
+              30 minutes of gardening can burn as many calories as a brisk walk.
+            </p>
+          </div>
+
+          <div
+            class="col-md-6 phb-box phb-box4"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <img src="image/phb4.png" alt="Heart Health" />
+            <h3>Heart Health</h3>
+            <p style="color: white">
+              Regular gardening reduces the risk of heart disease and high blood
+              pressure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EB Section -->
+    <div class="ebsection" id="toeb">
+      <div class="container">
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        >
+          <div class="col-lg-8">
+            <div class="row justify-content-center">
+              <h2 class="mb-5" data-aos="fade-up" data-aos-duration="800">
+                <span class="highlight">Environmental</span> Benefits<br />
+              </h2>
+              <div class="col-6 mt-3">
+                <div class="row">
+                  <div class="col-lg-3 mb-sm-5">
+                    <div
+                      class="ebbox box d-flex justify-content-center align-items-center mb-2"
+                    >
+                      <img
+                        src="image/eb1.png"
+                        alt="air"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-9"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-duration="800"
+                  >
+                    <h4>Cleans the Air</h4>
+                    <p>
+                      Plants absorb carbon dioxide (CO₂) and release oxygen (O₂)
+                      through photosynthesis — improving air quality. There are
+                      even plants that absorb toxic pollutants (like benzene and
+                      formaldehyde) from the air.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-6 mt-3"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="800"
+              >
+                <div class="row">
+                  <div class="col-lg-3 mb-sm-5">
+                    <div
+                      class="box ebeven d-flex justify-content-center align-items-center mb-2"
+                    >
+                      <img
+                        src="image/eb2.png"
+                        alt="urban"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-9"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-duration="800"
+                  >
+                    <h4>Reduces the Urban Heat Effect</h4>
+                    <p>
+                      In cities, the pavement traps heat. Gardens cool the air
+                      through evapotranspiration.Rooftop and vertical gardens
+                      are now used to reduce indoor temperature naturally.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mt-3">
+                <div class="row">
+                  <div class="col-lg-3 mb-sm-5">
+                    <div
+                      class="box ebeven d-flex justify-content-center align-items-center mb-2"
+                    >
+                      <img
+                        src="image/eb3.png"
+                        alt="air"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-9"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-duration="800"
+                  >
+                    <h4>Supports Biodiversity</h4>
+                    <p>
+                      Pollinators (bees, butterflies, birds) are attracted to
+                      native plants. Composting in the garden recycles nutrients
+                      back into the ground and keeps waste from landfills.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 mt-3">
+                <div class="row">
+                  <div class="col-lg-3 mb-sm-5">
+                    <div
+                      class="box ebbox d-flex justify-content-center align-items-center mb-2"
+                    >
+                      <img
+                        src="image/eb4.png"
+                        alt="soil"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-9"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-duration="800"
+                  >
+                    <h4>Prevents Soil Erosion</h4>
+                    <p>
+                      Vegetation is healthier and more robust because soil
+                      composting supplies them with nutrients necessary to be
+                      healthy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MBP section -->
+
+    <!-- TIOG Section -->
+    <div class="tiogsection">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div
+            class="col-12 text-center mb-4"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <h2 class="mt-5">
+              <span class="highlight">Why</span> Gardening?<br />
+            </h2>
+            <p class="mb-4">
+              Gardening is more than just a hobby. It nurtures both the body and
+              the mind, fosters learning, and significantly impacts the
+              environment.
+            </p>
+          </div>
+
+          <div class="col-lg-10" style="margin-bottom: 80px">
+            <div class="row align-items-center">
+              <div
+                class="col-lg-6"
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="800"
+              >
+                <h5 class="progress-title">Learning and Personal Growth</h5>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bar1"
+                    role="progressbar"
+                    style="width: 65%"
+                  >
+                    65% increased knowledge
+                  </div>
+                </div>
+
+                <h5 class="progress-title">Mental Health Benefits</h5>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bar2"
+                    role="progressbar"
+                    style="width: 40%"
+                  >
+                    40% reduction in stress
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-duration="800"
+              >
+                <h5 class="progress-title">Physical Health Benefits</h5>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bar3"
+                    role="progressbar"
+                    style="width: 50%"
+                  >
+                    50% fitness improvement
+                  </div>
+                </div>
+
+                <h5 class="progress-title">Environmental Benefits</h5>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bar4"
+                    role="progressbar"
+                    style="width: 75%"
+                  >
+                    75% greener spaces
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+    <script>
+      AOS.init();
+    </script>
+    <a href="#top" class="btn scroll-up">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+  </body>
+</html>

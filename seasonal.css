@@ -1,0 +1,69 @@
+.nav .nav-item .nav-link {
+    border-radius: 0;
+    margin: 5px;
+}
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item.nav-link:hover {
+    color: #4CAF50;
+}
+
+.card-img-wrapper .card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.card-img-wrapper:hover .card-img-top {
+    transform: scale(1.1);
+}
+/* Image Border */
+.steps {
+    height: 350px;
+    border-radius: 20px;
+}
+
+/* Step Card Styling */
+.step-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.g-container {
+    background-color:#3b5c3dda;
+    margin: 20px 0;
+    border-radius: 10px;
+    min-height: 250px;
+}
+.btn.f-button {
+    width: 650px;
+    margin-top: 1.5rem;
+    background-color: #f5fffa;
+    color:#2e3c21;
+    border: 3px solid #2e3c21;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.btn.f-button:hover {
+    color: white;
+    background-color:  #91b257;
+    transform: scale(1.05);
+}
+.btn.f-button a:hover {
+    background-color: #f5fffa;
+}
+@media (max-width: 768px) {
+    .btn.f-button {
+        width: 500px;
+    }
+}
+
+
+
+

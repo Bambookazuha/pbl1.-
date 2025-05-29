@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Growing Roots | Garden Discussion</title>
+  <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="image/favi.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+ <!-- Bootstrap CDN -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ <!-- External CSS -->
+ <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="nav.css">
+ <link rel="stylesheet" href="footer.css">
+
+
+ <!-- Bootstrap Icons -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body class="garden-dicussion-page">
+  <a href="#top" class="btn scroll-up">
+        <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link active-state" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <section class="hero">
+    <div class="hero-card">
+      <h1>🌿 Garden Discussion Board</h1>
+      <p>Explore real gardening tips and stories.
+        In Planting & Troubleshooting, read about common issues and advice.
+        In Show & Tell, see photos and notes from our gardeners.
+        
+        Want to share your own? Head to the About Us page — you’ll find a Contact Us form there!</p>
+    </div>
+  </section>
+
+  <div class="tab-container">
+    <div class="tab-inner-container">
+      <div class="tab-label-wrapper">
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label class="tab-label" for="tab1">Plan Care & Troubleshooting</label>
+
+        <input type="radio" id="tab2" name="tabs">
+        <label class="tab-label" for="tab2">Show & Tell</label>
+
+    <div class="content">
+        <div class="tab-content" id="content1">
+          <div class="feedback-section">
+            <div class="t-container">
+              <!-- Posts -->
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/jossie.jpeg" alt="Customer photo">
+                  <div><strong>Jossie</strong><br><span>Posted on May 18, 2025</span></div>
+                </div>
+                <hr>
+                <p>Sun all day = crispy plants  Balcony sun dries soil fast. How do you keep plants happy?</p>
+              </div>
+  
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/jonh.jpeg" alt="Customer photo">
+                  <div><strong>Joong</strong><br> <span>Posted on May 16, 2025</span></div>
+                </div>
+                <hr>
+                <p>Recycled bottle planter hack! Cut a Coke bottle in half, poked holes, filled it with soil, and boom — mini pot for my spring onions.</p>
+              </div>
+  
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/preth.jpeg" alt="Customer photo">
+                  <div><strong>Perth</strong><br>
+                    <span>Posted on May 15, 2025</br></div>
+                </div>
+                <hr>
+                <p>Pollinator-friendly flowers for small spaces? I have room for maybe 3 medium pots. Suggestions?</p>
+              </div>
+  
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/emi.jpeg" alt="Customer photo">
+                  <div><strong>Emi</strong><br><span>Posted on May 10, 2025</span></div>
+                </div>
+                <hr>
+                <p>Low-effort indoor flowers? Something pretty for my kitchen that doesn’t need a ton of care?</p>
+              </div>
+  
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/bri.jpeg" alt="Customer photo">
+                  <div><strong>Bright</strong><br><span>Posted on May 4, 2025</span></div>
+                </div>
+                <hr>
+                <p> What’s eating my lettuce?? Found tiny holes and slime. Want organic solutions only.</p>
+              </div>
+  
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/prim.jpeg" alt="Customer photo">
+                  <div><strong>Prim</strong><br><span>Posted on May 26, 2025</span></div>
+                </div>
+                <hr>
+                <p> Compost smells weird — normal? My bin smells sour. Using veggie scraps and dry leaves.</p>
+              </div>
+  
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/james.jpeg" alt="Customer photo">
+                  <div><strong>James</strong><br><span>Posted on May 26, 2025</span></div>
+                </div>
+                <hr>
+                <p> Using eggshells in the garden? Do they really help with snails or add calcium?</p>
+              </div>
+  
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/vernon.jpeg" alt="Customer photo">
+                  <div><strong> Vernon</strong><br><span>Posted on May 26, 2025</span></div>
+                </div>
+                <hr>
+                <p>  My compost smelled awful until I added dry leaves and now it’s way less gross. </p>
+              </div>
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/caskey.jpeg" alt="Customer photo">
+                  <div><strong> Caskey</strong><br><span>Posted on May 26, 2025</span></div>
+                </div>
+                <hr>
+                <p>Bought cheap gloves and they ripped in one week, now I use old kitchen rubber ones instead.</p>
+              </div>
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/sky.jpeg" alt="Customer photo">
+                  <div><strong> Sky</strong><br><span>Posted on May 26, 2025</span></div>
+                </div>
+                <hr>
+                <p> Apartment garden tip: hang planters on the railing but line them with coconut fiber so soil doesn’t spill.</p>
+              </div>
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/nanon.jpeg" alt="Customer photo">
+                  <div><strong>Nanon</strong><br><span>Posted on May 26, 2025</span></div>
+                </div>
+                <hr>
+                <p>Forgot to water my mint for a week and it still came back like nothing happened.</p>
+              </div>
+              <div class="t-card">
+                <div class="customer-info">
+                  <img src="finalimg/luke.jpeg" alt="Customer photo">
+                  <div><strong> Luke</strong><br><span>Posted on May 26, 2025</span></div>
+                </div>
+                <hr>
+                <p>My aloe fell off the windowsill and I just shoved it back in the soil and it’s thriving again.</p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+  
+        <div class="tab-content" id="content2">
+          <section class="discussion-section">
+            <div class="secound-card-container">
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/basil.jpeg" alt="Basil plant">
+                  <strong>Fluke</strong>
+                  <span>Posted on May 5, 2025</span>
+                </div>
+                <hr>
+                <p>Just planted basil! Smells amazing already </p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/powedery.webp" alt="Mint leaves">
+                  <strong>Joss</strong>
+                  <span>Posted on May 2, 2025</span>
+                </div>
+                <hr>
+                <p>Noticed white powdery spots on my mint leaves. Is this powdery mildew? How can I treat it organically?</p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/plily.jpg" alt="Peace Lily">
+                  <strong>Phuwin</strong>
+                  <span>Posted on May 30, 2025</span>
+                </div>
+                <hr>
+                <p>After months of care, my peace lily finally bloomed! Such a rewarding experience.</p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/spidertips.webp" alt="Spider plant">
+                  <strong>Jimmy</strong>
+                  <span>Posted on May 18, 2025</span>
+                </div>
+                <hr>
+                <p>The tips of my spider plant leaves are turning brown. Could it be due to overwatering or dry air?</p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/edibleplant.jpeg" alt="Shaded plant area">
+                  <strong>Nanon</strong>
+                  <span>Posted on May 22, 2025</span>
+                </div>
+                <hr>
+                <p>Not much sun here. Can I grow anything edible in the shade?</p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/withouthole.jpeg" alt="Monstera">
+                  <strong>Gawin</strong>
+                  <span>Posted on May 15, 2025</span>
+                </div>
+                <hr>
+                <p>My monstera’s new leaves lack the characteristic holes. Is it not getting enough light?</p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/zucchini.jpeg" alt="Zucchini plant">
+                  <strong>Daou</strong>
+                  <span>Posted on May 10, 2025</span>
+                </div>
+                <hr>
+                <p>My young zucchini plant’s leaves are turning yellow. Is it overwatering or a nutrient issue?</p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/onlysomespace.webp" alt="Flower pots">
+                  <strong>Mile</strong>
+                  <span>Posted on May 21, 2025</span>
+                </div>
+                <hr>
+                <p>Need pollinator-friendly flowers! Only space for a few pots. What should I plant?</p>
+              </div>
+          
+              <div class="card second-card">
+                <div class="customer-info">
+                  <img src="finalimg/sweetshrubs.webp" alt="Sweetshrubs">
+                  <strong>Khao</strong>
+                  <span>Posted on May 20, 2025</span>
+                </div>
+                <hr>
+                <p>What is wrong with my sweetshrubs?</p>
+              </div>
+          
+            </div>
+          </section>
+          
+        </div>
+      </div>
+        
+      </div>
+      
+    </div>
+
+  </div>
+    <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+    <a href="#top" class="btn scroll-up">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+</body>
+</html>

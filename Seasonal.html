@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing Roots | Seasonal</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="image/favi.png" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="seasonal.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- Bootstap CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--AOS Link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            background-color: #F5fffa; 
+        }
+        .card {
+            height: 450px;
+        }
+        .nav-pills .nav-item .nav-link {
+            color: #000000;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .nav-pills .nav-item .nav-link.active {
+            background-color: #91B257;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .bi-arrow-up-square-fill {
+            font-size: 25px;
+            color: white;
+        }
+        mark {
+            background-color: rgba(145, 178, 87, 0.845);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+        }
+        h4 mark:hover {
+            background-color: rgb(145, 178, 87);
+            color:white ;
+        }
+        .card img {
+            object-fit: cover;
+        }
+        .card {
+            transition: transform 0.3 ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px #91b257;
+        }
+        .btn.s-button {
+          background-color: #f5fffa;
+          color:#2e3c21;
+          border: 3px solid #2e3c21;
+          padding: 10px 10px;
+          font-size: 1.1rem;
+          font-weight: bold;
+          border-radius: 15px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .btn.s-button:hover {
+          color: white;
+          background-color:  #91b257;
+          transform: scale(1.05);
+        }
+        .btn.c-button {
+          background-color: #f5fffa;
+          color:#2e3c21;
+          border: 3px solid #2e3c21;
+          padding: 8px 8px;
+          font-size: 1.1rem;
+          font-weight: bold;
+          border-radius: 15px;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .btn.c-button:hover {
+          color: white;
+          background-color:  #91b257;
+          transform: scale(1.05);
+        }
+        p {
+            font-size: 19px;
+        }
+        ul {
+            font-size: 19px;
+        }
+        .offcanvas{
+        background-color: #91b257;
+      }
+      .scroll-up {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #3b5732;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+        z-index: 1000;
+        text-decoration: none;
+      }
+              
+      .scroll-up:hover {
+        background: #3b5732;
+      }
+
+      .bi-arrow-up-square-fill {
+        font-size: 25px;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+<a href="#top" class="btn scroll-up">
+        <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle active-state" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seasonal plants start -->
+      <div class="container mt-5">
+        <ul class="nav nav-pills justify-content-center">
+            <ul class="nav nav-pills justify-content-center" id="season">
+                <li class="nav-item"><a href="#summer" class="nav-link active" data-bs-toggle="tab">Summer Season</a></li>
+                <li class="nav-item"><a href="#rainy" class="nav-link" data-bs-toggle="tab">Rainy Season</a></li>
+                <li class="nav-item"><a href="#winter" class="nav-link" data-bs-toggle="tab">Winter Season</a></li>
+            </ul>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="summer">
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Dahlia.png" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Dahlia</mark></h4>
+                                <p>Dahlias are vibrant tuberous flowers with large, colorful blooms, popular in Myanmar’s summer gardens.</p>
+                                <button class="btn btn-button s-button"><a href="#dahlia" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="dahlia" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Dahlia's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Dahlia:</mark> </h4>
+                                            <p><b>Sunlight:</b> Full sun, at least 6 hours daily.</p>
+                                            <p><b>Water:</b> water deeply 2-3 times weekly once sprouted, keeping soil moist but not soggy.</p>
+                                            <p><b>Soil:</b> Well-drained, fertile loamy soil. </p>
+                                            <p><b>Growth Time:</b>Blooms in 90-120 days.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Pick a sunny spot that gets at least 6 hours of sunlight each day.</li>
+                                                <li>Make the soil loose and mix in compost or old manure to help plants grow better.</li>
+                                                <li>Wait until the weather is warm and there is no more risk of frost before planting.</li>
+                                                <li>Dig holes about 4-6 inches deep and 18 inches apart.</li>
+                                                <li>Place the tuber (root) in the hole with the “eye” facing up, then cover it with soil.</li>
+                                                <li>Do not water right away. Wait until you see green shoots coming up.</li>
+                                                <li>When shoots appear, water deeply 2-3 times a week. Keep the soil moist but not soggy.</li>
+                                                <li>When the plant is about 8 inches tall, use flower food every 2 weeks.</li>
+                                                <li>Pinch off the top of the stem when it is 12-16 inches tall to help the plant grow more branches and flowers.</li>
+                                                <li>After 12-17 weeks (3-4 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Aster.jpeg" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Aster</mark></h4>
+                                <p>Asters produce daisy-like flowers and prefer cooler summer temperatures—often grown from nursery plants to ensure quicker blooms.</p>        
+                                <button class="btn btn-button s-button"><a href="#Aster" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="Aster" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Aster's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Aster: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to partial shade.</p>
+                                            <p><b>Water:</b>  Keep soil consistently moist but not waterlogged; avoid wetting leaves.</p>
+                                            <p><b>Soil:</b> Loamy, well-drained, slightly acidic soil.</p>
+                                            <p><b>Growth Time:</b> 60-90 days to bloom.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Choose a spot with lots of sun or light shade (8-10 hours daily).</li>
+                                                <li>Make the soil loose and add compost for better growth.</li>
+                                                <li>Plant small aster plants or seeds in spring.</li>
+                                                <li>Leave space between each plant so roots can spread.</li>
+                                                <li>Water the soil at the base to keep it moist but not soggy. Try not to get water on the leaves.</li>
+                                                <li>Feed with flower food every 2 weeks until you see flowers.</li>
+                                                <li>Trim plants periodically to encourage new blooms.</li>
+                                                <li>Blooms in about 2-3 months (8-13 weeks).</li>
+                                                <li>After 8-13 weeks (2-3 months), enjoy the plant!</li>
+                                                <li>Every 3 years, dig up and split the plants to keep them healthy and growing well.</li>
+                                                
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Verbena.jpeg" alt="Plant Image" class="card-img-top" height="240px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Verbena</mark></h4>
+                                <p>Verbena is a hardy, drought-tolerant plant that blooms profusely in hot summer sun. It’s often grown for its long-lasting, colorful flowers.</p>
+                                <button class="btn btn-button s-button"><a href="#verbena" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="verbena" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Verbena's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Verbena: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun, 8-10 hours daily.</p>
+                                            <p><b>Water:</b >Moderate; about 1 inch per week, avoid wet foliage.</p>
+                                            <p><b>Soil:</b> Well-drained soil, tolerates poor soil if drainage is good.</p>
+                                            <p><b>Growth Time:</b> Blooms in first season, continuous bloom with trimming.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Find a spot with full sun (8-10 hours daily).</li>
+                                                <li>Mix compost into the soil to make it rich and loose.</li>
+                                                <li>Plant seeds or small plants directly in the ground.</li>
+                                                <li>Water at the base of the plant, not on the leaves, especially if the weather is dry.</li>
+                                                <li>Mulch around the plants to keep soil moist and stop weeds.</li>
+                                                <li>Divide root clumps every 3 years to maintain plant health.</li>
+                                                <li>Trim the plants after flowers fade to help new flowers grow.</li>
+                                                <li>After 8-13 weeks (2-3 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Vinca.jpg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Madagascar Periwinkle</mark></h4>
+                                <p>Madagascar Periwinkle (Vinca) is a drought-tolerant annual with glossy leaves and bright, colorful flowers, ideal for hot summers.</p>
+                                <button class="btn btn-button s-button"><a href="#vinca" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="vinca" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Madagascar Periwinkle's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Vinca: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to part shade.</p>
+                                            <p><b>Water:</b> Moderate watering; drought tolerant but needs more water in containers.</p>
+                                            <p><b>Soil:</b> Fertile, well-drained soil enriched with organic matter.</p>
+                                            <p><b>Growth Time:</b> Blooms in 60-90 days.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Wait until the soil is warm (at least 15°C/60°F).</li>
+                                                <li>Use soil that drains well and mix in compost.</li>
+                                                <li>Plant seeds or small plants 10-20 inches apart.</li>
+                                                <li>Water when the soil feels dry. Water more often if growing in pots.</li>
+                                                <li>Feed lightly with plant food if needed.</li>
+                                                <li>Mulch around the plants to keep the soil moist.</li>
+                                                <li>Remove old flowers to help new ones grow.</li>
+                                                <li>After 8-10 weeks (about 2 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button s-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/lobelia.jpg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Lobelia</mark></h4>
+                                <p>Lobelia is a compact plant with vibrant blue, purple, or white flowers, suitable for borders and containers.</p>
+                                <button class="btn btn-button s-button"><a href="#Lobelia" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="Lobelia" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Lobelia's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Lobelia: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to partial shade (4-6 hours sun).</p>
+                                            <p><b>Water:</b> Keep soil moist but not waterlogged.</p>
+                                            <p><b>Soil:</b> Rich, well-drained, slightly acidic soil (pH 6.0-7.0).</p>
+                                            <p><b>Growth Time:</b> Blooms in 8-10 weeks.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Loosen the soil and mix in compost.</li>
+                                                <li>Plant small plants 6-18 inches apart.</li>
+                                                <li>Water well after planting and keep the soil moist.</li>
+                                                <li>Mulch to keep the soil moist and stop weeds.</li>
+                                                <li>Feed once a month.</li>
+                                                <li>Pinch the tips for bushier plants.</li>
+                                                <li>Give some shade if the weather is very hot.</li>
+                                                <li>After 8-10 weeks (about 2 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/pentas.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Pentas</mark></h4>
+                                <p>Pentas are heat-tolerant, low-maintenance plants with clusters of star-shaped flowers that attract butterflies, making them great for sunny gardens.</p>
+                                <button class="btn btn-button s-button"><a href="#pentas" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="pentas" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Pentas's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Pentas: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun preferred; tolerates partial shade.</p>
+                                            <p><b>Water:</b> Keep soil consistently moist; avoid overhead watering.</p>
+                                            <p><b>Soil:</b> Well-drained soil, tolerates poor soil if drainage is good.</p>
+                                            <p><b>Growth Time:</b> Blooms in 8-10 weeks.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Pick a sunny spot for planting.</li>
+                                                <li>Loosen the soil and add compost.</li>
+                                                <li>Plant seeds or small plants.</li>
+                                                <li>Water at the base to avoid wet leaves.</li>
+                                                <li>Mulch to keep the soil moist.</li>
+                                                <li>Feed once a month.</li>
+                                                <li>Watch for bugs and remove them if needed.</li>
+                                                <li>After 8-10 weeks (about 2 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/cuphea.jpeg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Cuphea</mark></h4>
+                                <p>Cuphea is a tropical plant with tubular flowers that attract hummingbirds and thrive in warm climates.</p>
+                                <button class="btn btn-button s-button"><a href="#Cuphea" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="Cuphea" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Cuphea's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Cuphea: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to partial shade.</p>
+                                            <p><b>Water:</b> Moderate watering; keep soil moist.</p>
+                                            <p><b>Soil:</b> Well-drained, fertile soil.</p>
+                                            <p><b>Growth Time:</b> Blooms in about 8 weeks.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Pick a sunny or partly shaded spot.</li>
+                                                <li>Loosen the soil and add compost.</li>
+                                                <li>Plant seeds or small plants.</li>
+                                                <li>Water when the top of the soil feels dry.</li>
+                                                <li>Feed once a month with plant food.</li>
+                                                <li>Mulch to keep the soil moist.</li>
+                                                <li>Pinch the tips for fuller plants.</li>
+                                                <li>After 8 weeks (about 2 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/foxglove.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Digitalis (Foxglove)</mark></h4>
+                                <p>Foxglove is a tall biennial or perennial with tubular flowers, often grown for its striking garden presence.</p>
+                                <button class="btn btn-button s-button"><a href="#foxglove" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="foxglove" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Digitalis's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>What to know about Foxglove: </h4>
+                                            <p><b>Sunlight:</b> Partial shade to full sun.</p>
+                                            <p><b>Water:</b> Moderate; avoid waterlogged soil.</p>
+                                            <p><b>Soil:</b> Well-drained, slightly acidic soil.</p>
+                                            <p><b>Growth Time:</b> Blooms in 70-90 days.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant seeds indoors or outdoors in loose, well-drained soil.</li>
+                                                <li>Thin small plants to 12-18 inches apart.</li>
+                                                <li>Water to keep the soil moist, not soggy.</li>
+                                                <li>Feed lightly with plant food.</li>
+                                                <li>Mulch to keep the soil moist and stop weeds.</li>
+                                                <li>Stake tall plants if they start to lean.</li>
+                                                <li>Wear gloves when handling (the plant can be poisonous).</li>
+                                                <li>After 10-13 weeks (about 2-3 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Gazania.jpeg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Gazania</mark></h4>
+                                <p>Gazanias are drought-tolerant, sun-loving flowers with bright, daisy-like blooms that thrive in hot, and dry summer conditions</p>
+                                <button class="btn btn-button s-button"><a href="#Gazania" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="Gazania" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Gazania's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Gazania: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b> Low to moderate; drought tolerant.</p>
+                                            <p><b>Soil:</b> Well-drained sandy or loamy soil.</p>
+                                            <p><b>Growth Time:</b> Blooms in 8-10 weeks.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Pick a sunny spot.</li>
+                                                <li>Use sandy or loose soil.</li>
+                                                <li>Plant seeds or small plants after the last frost.</li>
+                                                <li>Water only when the soil is dry.</li>
+                                                <li>Feed sometimes with plant food.</li>
+                                                <li>Mulch to keep the soil moist and stop weeds.</li>
+                                                <li>Pinch the tips for bushier plants.</li>
+                                                <li>After 8-10 weeks (about 2 months), enjoy the plant!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="rainy">
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/pauk.jpg" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Pauk Flower (Butea monosperma)</mark></h4>
+                                <p>Known as the “Flame of the Forest,” this tree bursts with bright red flowers at the start of the rainy season in Myanmar’s central regions.</p>
+                                <button class="btn btn-button s-button"><a href="#pauk" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="pauk" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Pauk Flower's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Pauk: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to partial shade.</p>
+                                            <p><b>Water:</b> Moderate; tolerates heavy rains well.</p>
+                                            <p><b>Soil:</b>  Well-drained sandy or loamy soil.</p>
+                                            <p><b>Growth Time:</b>Blooms after 2-3 years of growth.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Select a sunny or lightly shaded spot with well-drained soil.</li>
+                                                <li>Soak seeds overnight to soften seed coat.</li>
+                                                <li>Plant seeds 1-2 inches deep in prepared soil.</li>
+                                                <li>Water regularly to keep soil moist but avoid waterlogging.</li>
+                                                <li>Fertilize seedlings after establishment with balanced fertilizer.</li>
+                                                <li>Mulch to retain moisture during heavy rains.</li>
+                                                <li>Prune young plants lightly to encourage branching.</li>
+                                                <li>After 24-36 months, enjoy vibrant flowers during the rainy season!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/theraphi.png" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Tha Ra Phi</mark></h4>
+                                <p>Tha Ra Phi is an evergreen tree with fragrant flowers used in traditional cosmetics, blooming during the rainy months, near coastal regions.</p>
+                                <button class="btn btn-button s-button"><a href="#tha" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="tha" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Tha Ra Phi's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Tha Ra Phi: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b>  Moderate; tolerates wet soil during rainy season.</p>
+                                            <p><b>Soil:</b> Well-drained sandy loam, rich in organic matter.</p>
+                                            <p><b>Growth Time:</b> Blooms in 3-4 years (36-48 months).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Choose a sunny location with well-drained soil.</li>
+                                                <li>Sow seeds or plant saplings early in the rainy season.</li>
+                                                <li>Protect young plants from strong monsoon winds.</li>
+                                                <li>Fertilize annually with organic compost.</li>
+                                                <li>Mulch to conserve moisture and reduce weeds.</li>
+                                                <li>Prune dead branches to maintain health.</li>
+                                                <li>Trim plants periodically to encourage new blooms.</li>
+                                                <li>After 36-48 months, enjoy fragrant flowers during the rainy months!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Pone.png" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Pone Nyat (Calophyllum species)</mark></h4>
+                                <p>Pone Nyat is a shade-loving tree with shiny green leaves and sweet-smelling flowers, growing near rivers and coastal areas in moist soils.</p>
+                                <button class="btn btn-button s-button"><a href="#pone" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="pone" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Pone Nyat's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Pone Nyat: </mark></h4>
+                                            <p><b>Sunlight:</b> Partial shade to full sun.</p>
+                                            <p><b>Water:</b> Prefers moist soil, thrives in rainy season.</p>
+                                            <p><b>Soil:</b> Moist, well-drained fertile soil near water bodies.</p>
+                                            <p><b>Growth Time:</b> Blooms in 3-5 years (36-60 months).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant near water or moist areas in partial shade.</li>
+                                                <li>Use fertile, well-drained soil.</li>
+                                                <li>Water regularly during dry spells.</li>
+                                                <li>Mulch to retain moisture.</li>
+                                                <li>Protect from strong monsoon winds.</li>
+                                                <li>Fertilize annually with organic matter.</li>
+                                                <li>Prune for healthy growth.</li>
+                                                <li>After 36-60 months, enjoy decorative foliage and fragrant flowers!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/khatta.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Khat Ta Flower (Michelia champaca)</mark></h4>
+                                <p>Khat Ta is a tree with very fragrant white flowers and red stamens, blooming heavily during the rainy season and valued for its scent.</p>
+                                <button class="btn btn-button s-button"><a href="#miche" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="miche" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Khat Ta Flower's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Khat Ta: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to partial shade.</p>
+                                            <p><b>Water:</b> Moderate; tolerates wet soil.</p>
+                                            <p><b>Soil:</b> Fertile, well-drained loam.</p>
+                                            <p><b>Growth Time:</b> Blooms in 3-4 years (36-48 months).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Select sunny or partially shaded site with fertile soil.</li>
+                                                <li>Plant seeds or saplings at the start of the rainy season.</li>
+                                                <li>Water regularly to maintain moist soil.</li>
+                                                <li>Mulch to conserve moisture and reduce weeds.</li>
+                                                <li>Fertilize annually with compost.</li>
+                                                <li>Prune lightly after flowering.</li>
+                                                <li>Protect young plants from storms.</li>
+                                                <li>After 36-48 months, enjoy fragrant blossoms during the monsoon!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/yin mar.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Yin Mar Flower (Shorea robusta)</mark></h4>
+                                <p>Yin Mar is a large evergreen tree native to Myanmar's tropical forest, famous for its aromatic flowers and valuable timber.</p>
+                                <button class="btn btn-button s-button"><a href="#yin" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="yin" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Yin Mar Flower's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Yin Mar: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b> Moderate; thrives in humid rainy season.</p>
+                                            <p><b>Soil:</b> Well-drained loamy soil, slightly acidic.</p>
+                                            <p><b>Growth Time:</b> Blooms in 5-7 years (60-84 months).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant seedlings in full sun with fertile soil.</li>
+                                                <li>Water regularly during establishment.</li>
+                                                <li>Mulch to retain moisture.</li>
+                                                <li>Fertilize annually with organic matter.</li>
+                                                <li>Protect from pests.</li>
+                                                <li>Prune dead branches..</li>
+                                                <li>Give some shade if the weather is very hot.</li>
+                                                <li>After 60-84 months, enjoy fragrant flowers during monsoon!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/lotus.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Kyar Flower / Lotus</mark></h4>
+                                <p>The Lotus is an iconic aquatic flower that blooms on water surfaces in Myanmar’s rainy season, holding cultural and religious importance.</p>
+                                <button class="btn btn-button s-button"><a href="#Lotus" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="Lotus" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Lotus's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Lotus: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to partial shade.</p>
+                                            <p><b>Water:</b> Requires standing water or ponds.</p>
+                                            <p><b>Soil:</b> Muddy or silty pond bottom, rich in organic matter.</p>
+                                            <p><b>Growth Time:</b> Blooms in 2-3 months (8-12 weeks).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Select a pond or water body with 6-12 inch depth.</li>
+                                                <li>Plant rhizomes in mud at the pond bottom.</li>
+                                                <li>Ensure full sun exposure.</li>
+                                                <li>Maintain water level during the rainy season.</li>
+                                                <li>Remove competing weeds.</li>
+                                                <li>Fertilize pond water if needed.</li>
+                                                <li>Protect from fish or animals.</li>
+                                                <li>After 8-12 weeks, enjoy beautiful floating flowers!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Luffa.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Kha Wei Flower (Luffa aegyptiaca)</mark></h4>
+                                <p>Kha Wei is a fast-growing vine with pale yellow flowers and fibrous fruits, grown during Myanmar’s rainy season.</p>
+                                <button class="btn btn-button s-button"><a href="#wei" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="wei" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Kha Wei Flower's</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>hat to know about Kha Wei: </mark>W</h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b> Regular watering; tolerates rainy season well.</p>
+                                            <p><b>Soil:</b> Well-drained fertile loam.</p>
+                                            <p><b>Growth Time:</b> Blooms in 7-9 weeks (about 2 months).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Prepare fertile soil with compost.</li>
+                                                <li>Sow seeds 1-2 inches deep near trellis or support.</li>
+                                                <li>Water regularly to keep soil moist.</li>
+                                                <li>Fertilize after 3 weeks with balanced fertilizer.</li>
+                                                <li>Train vines on trellis for good air circulation.</li>
+                                                <li>Mulch to conserve moisture and reduce weeds.</li>
+                                                <li>Harvest flowers and young fruits as desired.</li>
+                                                <li>After 7-9 weeks, enjoy flowers and fruits!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Thazin.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Thazin Flower</mark></h4>
+                                <p>Thazin is a popular Myanmar orchid with beautiful, fragrant blooms appearing in cooler months after the rainy season.</p>
+                                <button class="btn btn-button s-button"><a href="#thazin" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="thazin" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Thazin Flower's</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">                                            
+                                            <h4><mark>What to know about Thazin: </mark></h4>
+                                            <p><b>Sunlight:</b>  Partial shade.</p>
+                                            <p><b>Water:</b> Moderate, prefers humid environment.</p>
+                                            <p><b>Soil:</b> Epiphytic or well-drained orchid mix.</p>
+                                            <p><b>Growth Time:</b> Blooms in 6-12 months (24-52 weeks).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Mount orchids on tree bark or grow in pots with orchid mix.</li>
+                                                <li>Provide filtered light.</li>
+                                                <li>Water regularly, keeping roots moist but not soggy.</li>
+                                                <li>Maintain high humidity.</li>
+                                                <li>Fertilize monthly with orchid fertilizer.</li>
+                                                <li>Ensure good air circulation.</li>
+                                                <li>Remove dead flowers and leaves.</li>
+                                                <li>After 24-52 weeks, enjoy fragrant orchid blooms!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Zagar.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Za Gar (Cassia fistula)</mark></h4>
+                                <p>Za Gar is a deciduous tree with bright yellow, fragrant flowers that bloom early in Myanmar’s rainy season, often planted along roads, etc.</p>
+                                <button class="btn btn-button s-button"><a href="#za" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="za" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-heade justify-content-centerr">
+                                        <h2 class="modal-title">Za Gar's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Za Gar: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun</p>
+                                            <p><b>Water:</b> Moderate; tolerates rainy season moisture.</p>
+                                            <p><b>Soil:</b> Well-drained sandy or loamy soil.</p>
+                                            <p><b>Growth Time:</b> Blooms in 3-5 years (36-60 months).</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant seeds or saplings in a sunny spot.</li>
+                                                <li>Water regularly.</li>
+                                                <li>Mulch to conserve moisture.</li>
+                                                <li>Fertilize annually.</li>
+                                                <li>Prune for shape and health.</li>
+                                                <li>Protect from strong winds..</li>
+                                                <li>Flowers bloom early in the rainy season..</li>
+                                                <li>After 36-60 months, enjoy fragrant yellow flowers!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="winter">
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/drose.png" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Desert Rose </mark></h4>
+                                <p>A succulent shrub with thick stems and bright pink or red trumpet-shaped flowers, thriving in sunny, dry conditions.</p>
+                                <button class="btn btn-button s-button"><a href="#rose" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="rose" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Desert Rose's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Desert Rose: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b> Moderate; allow soil to dry between waterings.</p>
+                                            <p><b>Soil:</b>  Well-drained, sandy or cactus mix.</p>
+                                            <p><b>Growth Time:</b> Flowers in 7–12 months from seed</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Choose a pot with drainage holes and fill with cactus or sandy soil.</li>
+                                                <li>Place the plant in a location with at least 6 hours of direct sunlight daily.</li>
+                                                <li>Water thoroughly, then let the soil dry out before watering again.</li>
+                                                <li>Fertilize with a balanced, diluted fertilizer every 4–6 weeks during the growing season.</li>
+                                                <li>Prune leggy stems in early spring to encourage bushier growth.</li>
+                                                <li>Protect from temperatures below 10°C (50°F); bring indoors if needed.</li>
+                                                <li>Watch for pests like spider mites and treat promptly.</li>
+                                                <li>Repot every 2–3 years to refresh soil and inspect roots.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/cherry.jpeg" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Myanmar Cherry Blossom</mark></h4>
+                                <p>A deciduous tree with delicate pink flowers that bloom in late winter, marking the seasonal change with beauty.</p>
+                                <button class="btn btn-button s-button"><a href="#cherry" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="cherry" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Myanmar Cherry Blossom's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Cherry Blossom: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b>  Moderate; avoid waterlogged soil.</p>
+                                            <p><b>Soil:</b> Well-drained loam.</p>
+                                            <p><b>Growth Time:</b> Blooms in 3–5 years.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant saplings in open, sunny areas with good air circulation.</li>
+                                                <li>Dig a hole twice as wide as the root ball and plant at the same depth.</li>
+                                                <li>Water deeply after planting and keep soil moist but not soggy.</li>
+                                                <li>Mulch around the base to retain moisture and regulate temperature.</li>
+                                                <li>Fertilize in early spring with a balanced fertilizer.</li>
+                                                <li>Prune dead or weak branches after flowering.</li>
+                                                <li>Protect young trees from strong winds.</li>
+                                                <li>Monitor for pests and diseases, treating as needed.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Marigold.jpg" alt="Plant Image" class="card-img-top" height="350px">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Marigold</mark></h4>
+                                <p>A bright, cheerful flower with orange or yellow blooms, commonly used in festivals and gardens during winter.</p>
+                                <button class="btn btn-button s-button"><a href="#marigold " class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="marigold" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Marigold's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Marigold: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b> Moderate; let soil dry between waterings.</p>
+                                            <p><b>Soil:</b> Well-drained, slightly acidic.</p>
+                                            <p><b>Growth Time:</b> Blooms in 8–10 weeks from seed.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Sow seeds directly in garden beds or pots in early October.</li>
+                                                <li>Cover seeds lightly with soil and water gently.</li>
+                                                <li>Keep soil moist until seedlings emerge.</li>
+                                                <li>Thin seedlings to 8–10 inches apart.</li>
+                                                <li>Water at the base to prevent fungal diseases.</li>
+                                                <li>Fertilize once at the start of flowering.</li>
+                                                <li>Deadhead spent blooms to encourage more flowers.</li>
+                                                <li>Remove any diseased or damaged leaves promptly.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/cosmos.jpg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Cosmos bipinnatus</mark></h4>
+                                <p>A tall, airy plant with daisy-like pink, white, or red flowers that bloom profusely in cool winter weather.</p>
+                                <button class="btn btn-button s-button"><a href="#cosmos" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="cosmos" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Cosmos's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Cosmos: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b> Low to moderate.</p>
+                                            <p><b>Soil:</b> Sandy, well-drained.</p>
+                                            <p><b>Growth Time:</b>  Blooms in 8–12 weeks from seed.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Sow seeds directly outdoors in October.</li>
+                                                <li>Lightly cover with soil and water gently.</li>
+                                                <li>Thin seedlings to 12 inches apart when they are a few inches tall.</li>
+                                                <li>Water only when the soil is dry.</li>
+                                                <li>Avoid over-fertilizing, which can reduce blooms.</li>
+                                                <li>Stake tall plants to prevent flopping.</li>
+                                                <li>Deadhead regularly to prolong flowering.</li>
+                                                <li>Collect seeds for next season after blooms fade.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Winter Heath.jpg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Winter Heath</mark></h4>
+                                <p>A low-growing shrub with small pink or white bell-shaped flowers that brighten gardens throughout winter.</p>
+                                <button class="btn btn-button s-button"><a href="#heath" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="heath" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Winter Heath's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Winter Heath: </mark></h4>
+                                            <p><b>Sunlight:</b> Full sun.</p>
+                                            <p><b>Water:</b> Minimal; drought-tolerant.</p>
+                                            <p><b>Soil:</b> Acidic, sandy.</p>
+                                            <p><b>Growth Time:</b> Blooms in 1–2 years.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant in well-drained, acidic soil in a sunny spot.</li>
+                                                <li>Space plants 12–18 inches apart for good air flow.</li>
+                                                <li>Water only during dry spells.</li>
+                                                <li>Mulch with pine needles to maintain soil acidity.</li>
+                                                <li>Avoid using lime or alkaline fertilizers.</li>
+                                                <li>Prune lightly after flowering to shape.</li>
+                                                <li>Remove dead branches as needed.</li>
+                                                <li>Monitor for pests, especially in humid weather.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/White Ginger Lily.jpg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>White Ginger Lily</mark></h4>
+                                <p>A fragrant perennial with elegant white flowers, often found in shaded, moist areas and blooming in winter.</p>
+                                <button class="btn btn-button s-button"><a href="#ginger" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="ginger" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">White Ginger Lily's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about White Ginger Lily: </mark></h4>
+                                            <p><b>Sunlight:</b> Partial shade.</p>
+                                            <p><b>Water:</b> Keep soil consistently moist.</p>
+                                            <p><b>Soil:</b> Rich, organic.</p>
+                                            <p><b>Growth Time:</b> Blooms in 1–2 years from rhizome.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant rhizomes 2–3 inches deep in moist, rich soil.</li>
+                                                <li>Water regularly to keep soil damp but not soggy.</li>
+                                                <li>Place in partial shade, protected from strong sun.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Fertilize monthly during growing season.</li>
+                                                <li>Divide clumps every 3 years to prevent overcrowding.</li>
+                                                <li>Remove spent flower stalks to encourage new growth.</li>
+                                                <li>Shelter from strong winds.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Rhododendron.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Rhododendron</mark></h4>
+                                <p>An evergreen shrub with clusters of bright red or pink flowers, native to Myanmar’s cooler highland regions.</p>
+                                <button class="btn btn-button s-button"><a href="#rhodo" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="rhodo" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Rhododendron's</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Rhododendron: </mark></h4>
+                                            <p><b>Sunlight:</b> Partial shade.</p>
+                                            <p><b>Water:</b> Moderate, prefers humidity.</p>
+                                            <p><b>Soil:</b> Acidic, well-drained.</p>
+                                            <p><b>Growth Time:</b> Blooms in 4–5 years from seedling.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Test soil pH (aim for 4.5–6.0).</li>
+                                                <li>Plant in partial shade, avoiding hot afternoon sun.</li>
+                                                <li>Water with rainwater to avoid soil alkalinity.</li>
+                                                <li>Mulch with pine needles to retain acidity.</li>
+                                                <li>Fertilize with rhododendron-specific feed in spring.</li>
+                                                <li>Prune lightly after flowering.</li>
+                                                <li>Protect from strong winds and frost.</li>
+                                                <li>Monitor for pests and fungal diseases.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Khwar Nyo.png" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Khwar Nyo</mark></h4>
+                                <p>A woody climber with fragrant purple and white flowers that bloom in winter, often seen growing on trellises.</p>
+                                <button class="btn btn-button s-button"><a href="#nyo" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="nyo" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Khwar Nyo's</h2>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">                                            
+                                            <h4><mark>What to know about Khwar Nyo: </mark></h4>
+                                            <p><b>Sunlight:</b>   Full sun to partial shade.</p>
+                                            <p><b>Water:</b> Regular, keep soil moist.</p>
+                                            <p><b>Soil:</b> Loamy, well-drained.</p>
+                                            <p><b>Growth Time:</b> Blooms in 1–2 years from planting.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant near a sturdy trellis or fence for support.</li>
+                                                <li>Water deeply 2–3 times weekly, especially in dry weather.</li>
+                                                <li>Mulch to retain soil moisture and suppress weeds.</li>
+                                                <li>Fertilize with balanced plant food in early spring.</li>
+                                                <li>Prune after flowering to encourage new growth.</li>
+                                                <li>Train new shoots onto support as they grow.</li>
+                                                <li>Remove dead or weak stems.</li>
+                                                <li>Watch for pests like aphids and treat if needed.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card plant-card">
+                            <div class="card-img-wrapper">
+                                <img src="image/Jasminum polyanthum.jpg" alt="Plant Image" class="card-img-top" style="height: 350px;">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4><mark>Jasminum polyanthum</mark></h4>
+                                <p>An evergreen twining climber with abundant fragrant pink buds that open to star-shaped white flowers in late winter and early spring.</p>
+                                <button class="btn btn-button s-button"><a href="#jasminum" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="jasminum" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-heade justify-content-centerr">
+                                        <h2 class="modal-title">Jasminum polyanthum's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4><mark>What to know about Jasminum:</mark></h4>
+                                            <p><b>Sunlight:</b> Full sun to partial shade.</p>
+                                            <p><b>Water:</b> Moderate; keep soil moist but not waterlogged.</p>
+                                            <p><b>Soil:</b> Well-drained, fertile soil.</p>
+                                            <p><b>Growth Time:</b> Blooms in about 1–2 years from planting.</p>
+                                            <h4><mark>Step-by-Step guides to grow:</mark></h4>
+                                            <ul>
+                                                <li>Plant near a sturdy trellis or fence where it can climb freely.</li>
+                                                <li>Ensure the site receives at least 4–6 hours of sunlight daily.</li>
+                                                <li>Water regularly to keep the soil evenly moist, especially during dry spells.</li>
+                                                <li>Apply balanced fertilizer monthly during the growing season.</li>
+                                                <li>Prune after flowering to maintain shape and encourage new growth.</li>
+                                                <li>Train new shoots onto supports as they grow.</li>
+                                                <li>Remove any dead or weak stems promptly.</li>
+                                                <li>Watch for common pests like aphids and treat as necessary.</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <!-- Seasonal plants end -->
+
+    
+    <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+    <a href="#top" class="btn scroll-up">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+</body>
+<script>AOS.init();</script>
+</html>

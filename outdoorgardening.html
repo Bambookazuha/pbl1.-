@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Growing Roots | Outdoor Gardening</title>
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="image/favi.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="shasha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="indoor.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+<body>
+    <a href="#top" class="btn scroll-up">
+        <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle active-state" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row align-items-center gy-4">
+        <!-- Images Section -->
+        <div class="col-lg-6 col-md-12">
+        <div class="row justify-content-center g-1">
+        <div class="col-6 px-1">
+        <img src="finalimg/heroout.jpg" alt="heroplant" class="img-fluid" style="max-height: 350px;" id="heroleft"
+        width="480px">
+        </div>
+        <div class="col-6 px-1">
+        <img src="finalimg/heroout2.jpg" alt="heroplant" class="img-fluid" style="max-height: 350px;" id="heroright"
+        width="480px">
+        </div>
+        </div>
+        </div>
+        <!-- Text Section -->
+        <div class="col-lg-6 col-md-12">
+        <h2 style="font-size: 45px;" id="indoor">Outdoor
+        <span style="color: #3b5732;" id="gardening">Gardening</span>
+        </h2>
+        <em style="color: #91b257;">Why it matters</em>
+        <p class="mt-2">
+        
+                Welcome to your guide for cultivating a beautiful and thriving outdoor garden! Whether you’re a beginner planting your first seeds or an experienced green thumb looking to enhance your space, you’ll find practical tips and inspiring ideas here. Gardening isn’t just about plants—it’s about creating a peaceful retreat, connecting with nature, and watching your hard work bloom into something amazing.
+        </p>
+        <p>
+        
+           Grow Green, Live Better From improving your physical health to boosting your mood, outdoor gardening offers countless benefits for your mind and body. On this page, you’ll explore simple techniques, time-saving hacks, and eco-friendly practices to make your garden flourish. Let’s dig in and grow something wonderful together!
+        </p>
+        </div>
+        </div>
+    </div>    
+    <div class="container
+    mt-5">
+        <div id="catalogCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/rose1.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Roses
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/hibis.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Hibiscus
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/lav.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Lavender</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/bou.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Bougainville
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/hydra.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Hydrangea
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/olean.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Oleander
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/azle.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Azalea
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/camel.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Camellia
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/boxwood.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Boxwood
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#catalogCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#catalogCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container
+    mt-5">
+        <div id="catalogCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/japan.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Japanese
+                                        Maple
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/hosta.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Hosta
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/juni.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Juniper</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/lily.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Lily
+                                        Agapanthus
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/trumpet.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Trumpet
+                                        Vine
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/clema.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Clematis
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item
+                active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/kissme.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Kiss
+                                        Me
+                                        Quick
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/cole.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Coleus
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/ele.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Elephant
+                                        Ear
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#catalogCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#catalogCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Morninga Tree</h2>
+                    <p class="plant-text">
+                        The Moringa tree is a fast-growing, drought-resistant tree native to South Asia and Africa. It has small, oval leaves, long seed pods (called drumsticks), and white flowers. Every part of the tree is useful — including leaves, seeds, pods, and roots.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#morninga_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--morninga modal-->
+                <div class="modal" id="morninga_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Morninga Tree</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Highly nutritious: Leaves are rich in vitamins, protein and minerals, helping fight malnutrition.</li>
+                                    <li>Cleans Water: Crushed seeds can purify dirty water by removing bacteria and particles.</li>
+                                    <li>Improves the environment- Absorbs carbon dioxide and helps restore damaged or dry lands.</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in full sun with well-draining sandy or loamy soil.</li>
+                                    <li>Water regularly until established, then it becomes drought-tolerant.</li>
+                                    <li>Prune to control size and encourage bushier growth.</li>
+                                    <li>Protect young trees from strong winds and pests.</li>
+                                    <li>Harvest leaves and pods often to encourage continuous growth.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="roseCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/Morninga1.jpeg" alt="Morninga 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/Morninga2.jpeg" alt="Morninga 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/Morninga3.jpeg" alt="Morninga 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#roseCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#roseCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="roseCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/bam1.jpeg" alt="bam 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/bam2.jpeg" alt="bam 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/bam3.jpeg" alt="bam 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#roseCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#roseCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Bamboo</h2>
+                    <p class="plant-text">
+                        Bamboo is a fast-growing, woody grass known for its tall, hollow stems and lush green leaves. It can grow in a variety of climates and is often used in landscaping, construction, and environmental conservation.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#bamboo_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--Bamboomodal-->
+                <div class="modal" id="bamboo_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Bamboo</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>absorbs more carbon dioxide and releases more oxygen than many other plants</li>
+                                    <li>provides natural habitat for wildlife like birds and small animals</li>
+                                    <li>helps reduce soil erosion and acts as a natural windbreak</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Water regularly, especially during dry periods.</li>
+                                    <li>Plant in well-drained, fertile soil.</li>
+                                    <li>Choose a sunny or partially shaded location.</li>
+                                    <li>prune dead or dams ged stalks to encourage new growth.</li>
+                                    <li>Use barriers(for running bamboo) to prevent over-spreading.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Oak Tree</h2>
+                    <p class="plant-text">
+                        The oak tree is a large, long-living hardwood tree known for its sturdy trunk, lobed leaves, and acorns. It can grow for hundreds of years and is a symbol of strength and stability in many cultures. Oak trees are commonly found in parks, forests, and large gardens.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#oak_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--Oakmodal-->
+                <div class="modal" id="oak_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Oak Tree</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Supports wildlife: Provides food and shelter for birds, squirrels, insects, and over 500 other species.</li>
+                                    <li>Reduces urban heat: Its broad canopy offers shade, cooling the air and reducing energy use.</li>
+                                    <li>Improves soil health: Its deep roots prevent erosion and help recycle nutrients into he ground.</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in a sunny location with plenty of space to grow.</li>
+                                    <li>Use well-draining, fertile soil.</li>
+                                    <li>Water deeply during dry spells, especially when young.</li>
+                                    <li>Mulch around the base to retain moisture and prevent weeds.</li>
+                                    <li>Avoid damaging roots  and trunk.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="roseCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/oaktree1.jpeg" alt="Oak 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/oaktree2.jpeg" alt="Oak 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/oaktree3.jpeg" alt="Oak 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#roseCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#roseCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="roseCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/rose1.jpg" alt="Rose 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/rose2.jpg" alt="Rose 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/rose3.jpg" alt="Rose 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#roseCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#roseCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Roses</h2>
+                    <p class="plant-text">
+                        Roses are one of the most beloved and iconic flowers in the world, known for their beauty, fragrance, and symbolic meanings such as love, passion, and elegance. They come in a wide variety of colors and types, from hybrid teas to climbing and miniature roses, making them a versatile choice for gardens and floral arrangements.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#rose_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--rosemodal-->
+                <div class="modal" id="rose_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Roses</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Enhance Garden Beauty: Roses add vibrant color and elegance to any garden or landscape.</li>
+                                    <li>Attract Pollinators: Their fragrance and nectar attract bees, butterflies, and other helpful insects.</li>
+                                    <li>Emotional & Aromatherapy Use: Rose scent is known to reduce stress and improve mood.</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in Full Sun: Ensure they get at least 6 hours of direct sunlight daily.</li>
+                                    <li>Use Well-Drained Soil: Roses dislike soggy roots; use rich, loamy soil.</li>
+                                    <li>Water Deeply but Infrequently: Water at the base 1–2 times a week, depending on climate.</li>
+                                    <li>Prune Regularly: Trim dead or weak stems to promote airflow and new growth.</li>
+                                    <li>Watch for Pests: Monitor for aphids, black spot, and mildew, and treat early if needed.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Hibiscus
+                    </h2>
+                    <p class="plant-text">
+                        Hibiscus is a vibrant flowering plant known for its large, colorful blossoms and tropical appeal. Found in warm climates around the world, this plant not only adds beauty to gardens but also serves as a popular choice for herbal teas and natural remedies. Hibiscus comes in various colors like red, pink, yellow, and white, and attracts pollinators like butterflies and hummingbirds.
+
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#hibis_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--hibismodal-->
+                <div class="modal" id="hibis_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Hibiscus</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Promotes heart health: Hibiscus tea may help lower blood pressure and cholesterol.</li>
+                                    <li>Natural beauty enhancer: The flower is used in hair and skincare products for its nourishing properties.</li>
+                                    <li>Boosts immunity: Rich in antioxidants and Vitamin C, hibiscus supports the immune system.</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Sunlight: Place hibiscus in full sun (at least 6 hours of sunlight daily).</li>
+                                    <li>Watering: Water regularly, keeping the soil moist but not soggy.</li>
+                                    <li>Soil: Use well-draining soil enriched with organic matter.</li>
+                                    <li>Fertilizing: Feed with a balanced, water-soluble fertilizer every two weeks during growing season.</li>
+                                    <li>Pruning: Trim dead branches and faded flowers to encourage new growth and more blooms.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="hibisCarousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/hibis.jpg" alt="Hibis 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/hibiss2.jpg" alt="Hibis 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/hibis3.jpg" alt="Hibis 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hibisCarousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hibisCarousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="lavCarousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/lav.jpg" alt="Lav 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/lav2.jpg" alt="Lav 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/lav3.jpg" alt="Lav 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#lavCarousel3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#lavCarousel3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Lavender</h2>
+                    <p class="plant-text">
+                        Lavender is a fragrant flowering plant known for its beautiful purple blooms and calming scent. Native to the Mediterranean, it is widely used in aromatherapy, skincare, cooking, and as a decorative garden plant. Its essential oil is especially popular for promoting relaxation and reducing stress. Lavender thrives in sunny, well-drained environments and adds both beauty and usefulness to homes and gardens.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#lav_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--lavmodal-->
+                 <div class="modal" id="lav_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Lavender</h2>
+                            </div>
+                            <div class="modal-body
+                            p-2">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Promotes relaxation and reduces anxiety</li>
+                                    <li>Helps improve sleep quality</li>
+                                    <li>Has natural antibacterial and antifungal properties</li>
+                                    <li>Can soothe skin irritations and minor burns</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in a location with full sunlight (6–8 hours daily)</li>
+                                    <li>Use well-drained, slightly alkaline soil</li>
+                                    <li>Water only when the soil is dry to avoid root rot</li>
+                                    <li>Protect from extreme humidity and overwatering</li>
+                                    <li>Prune regularly to encourage new growth and maintain shape</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Bougainville
+                    </h2>
+                    <p class="plant-text">
+                        Bougainvillea is a vibrant, fast-growing flowering plant known for its colorful bracts that surround tiny white flowers. Native to South America, it flourishes in warm, sunny climates and is often used to beautify fences, walls, and arbors. Bougainvillea comes in various colors such as pink, purple, red, orange, and white. It is drought-tolerant and a favorite in tropical and subtropical gardens for its striking appearance and low maintenance needs.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#bou_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="bouCarousel4" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/bou.jpg" alt="Bou 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/bou2.jpg" alt="Bou 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/bou3.jpg" alt="Bou 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bouCarousel4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bouCarousel4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <!--boumodal-->
+                 <div class="modal" id="bou_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Bougainville</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Adds vibrant color and beauty to gardens and landscapes</li>
+                                    <li>Drought-tolerant and suitable for dry climates</li>
+                                    <li>Attracts pollinators like bees and butterflies</li>
+                                    <li>Can be used as a natural fence or privacy screen</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in full sunlight (at least 6 hours daily)</li>
+                                    <li>Use well-drained soil and avoid waterlogging</li>
+                                    <li>Water deeply but infrequently (let soil dry out between watering)</li>
+                                    <li>Prune after flowering to maintain shape and encourage blooms</li>
+                                    <li>Protect from frost and strong cold winds</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="hydraCarousel5" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/hydra.jpg" alt="Hydra 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/hydra2.jpg" alt="Hydra 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/hydra3.jpg" alt="Hydra 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hydraCarousel5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hydraCarousel5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Hydrangea
+                    </h2>
+                    <p class="plant-text">
+                        Hydrangea is a popular flowering shrub known for its large, ball-shaped flower clusters that come in colors like blue, pink, white, and purple. Native to Asia and the Americas, hydrangeas bloom in late spring to early autumn and are often grown as ornamental plants in gardens. The flower color can change based on the soil's pH—acidic soils produce blue flowers, while alkaline soils result in pink blooms. Hydrangeas prefer moist, well-drained soil and partial sunlight.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#hydra_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--aloemodal-->
+                 <div class="modal" id="hydra_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Hydrangea</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Beautiful and colorful blooms that brighten up gardens</li>
+                                    <li>Long flowering season from spring to fall</li>
+                                    <li>Can be grown in pots or garden beds</li>
+                                    <li>Attracts pollinators like bees and butterflies</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Water regularly to keep soil moist, especially in hot weather</li>
+                                    <li>Plant in a location with morning sun and afternoon shade</li>
+                                    <li>Use mulch to retain moisture and keep roots cool</li>
+                                    <li>Prune after flowering to maintain shape and encourage blooms</li>
+                                    <li>Adjust soil pH to change flower color (acidic for blue, alkaline for pink)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Oleander
+                    </h2>
+                    <p class="plant-text">
+                        Oleander is a hardy, evergreen shrub known for its beautiful and fragrant flowers that bloom in clusters throughout spring and summer. It comes in colors like pink, red, white, and yellow. Native to the Mediterranean region, oleander is drought-tolerant and thrives in hot climates. While it is an attractive landscaping plant, all parts of oleander are highly toxic if ingested, so it should be handled with care, especially around children and pets.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#olean_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--oleanmodal-->
+                 <div class="modal" id="olean_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Oleander</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Produces colorful, fragrant flowers over a long blooming season</li>
+                                    <li>Drought-tolerant and low-maintenance</li>
+                                    <li>Adds privacy and structure as a hedge or screen</li>
+                                    <li>Grows well in poor or sandy soils</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in full sun for best flowering</li>
+                                    <li>
+                                        Use well-drained soil to avoid root rot
+                                    </li>
+                                    <li>Water deeply but infrequently once established</li>
+                                    <li>Prune after flowering to control shape and size</li>
+                                    <li>Wear gloves when handling, and keep away from pets and children due to toxicit</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="oleanCarousel6" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/zz2.jpg" alt="Olean 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/zz.jpg" alt="Olean 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/zz3.jpg" alt="Olean 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#oleanCarousel6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#oleanCarousel6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="azleCarousel7" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/azle.jpg" alt="Azalea 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/azle2.jpg" alt="Azalea 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/azle3.jpg" alt="Azalea 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#azleCarousel7" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#azleCarousel7" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Azalea
+                    </h2>
+                    <p class="plant-text">
+                        Azalea is a stunning flowering shrub from the rhododendron family, cherished for its vibrant, trumpet-shaped blooms that appear in spring. These flowers come in a range of colors including pink, red, white, purple, and orange. Native to Asia and North America, azaleas are popular in both gardens and containers. They thrive in cooler climates with partial shade and acidic, well-drained soil. Azaleas add elegance and charm to landscapes and are especially known for their beauty in woodland gardens.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#azle_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--azlemodal-->
+                <div class="modal" id="azle_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Azalea</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Produces vibrant flowers that enhance garden beauty</li>
+                                    <li>Attracts pollinators like bees and butterflies</li>
+                                    <li>Ideal for shady gardens and woodland areas</li>
+                                    <li>Can be grown in containers or garden beds</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in partial shade, avoiding harsh afternoon sun</li>
+                                    <li>Use acidic, well-drained soil rich in organic matter</li>
+                                    <li>Water regularly but avoid soggy soil</li>
+                                    <li>Mulch around the base to retain moisture and control weeds</li>
+                                    <li>Prune lightly after flowering to shape the plant and remove dead branches</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Camellia
+                    </h2>
+                    <p class="plant-text">
+                        Camellia is a graceful evergreen shrub known for its elegant, rose-like flowers that bloom in late winter to early spring. Native to East Asia, camellias come in shades of pink, red, and white, and are admired for their glossy, dark green foliage. They thrive in slightly acidic, well-drained soil and prefer partial shade. Camellias are often used in formal gardens, hedges, or as standalone feature plants, bringing beauty to the garden even when little else is in bloom
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#camel_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--camelmodal-->
+                <div class="modal" id="camel_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Camellia</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Produces beautiful, long-lasting flowers in cool seasons</li>
+                                    <li>Evergreen leaves offer year-round beauty</li>
+                                    <li>Ideal for formal gardens and</li>
+                                    <li>Attracts pollinators like bees</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in partial shade with protection from harsh afternoon sun</li>
+                                    <li>Use acidic, well-drained soil rich in organic matter</li>
+                                    <li>Keep soil evenly moist, especially during blooming</li>
+                                    <li>Mulch to maintain soil moisture and reduce weeds</li>
+                                    <li>Prune after flowering to shape and remove weak branches</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="camelCarousel8" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/camel.jpg" alt="Camel 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/camel2.jpg" alt="Camel 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/camel3.jpg" alt="Camel 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#camelCarousel8" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#camelCarousel8" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="boxwoodCarousel9" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/boxwood.jpg" alt="Fiddle 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/boxwood2.jpg" alt="Fiddle 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/boxwood3.jpg" alt="Fiddle 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#boxwoodCarousel9" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#boxwoodCarousel9" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Boxwood
+                    </h2>
+                    <p class="plant-text">
+                        Boxwood is a dense, slow-growing evergreen shrub prized for its small, glossy green leaves and natural ability to be shaped into neat hedges and topiaries. Native to Europe, Asia, and Africa, boxwood is commonly used in formal gardens, borders, and landscape designs due to its tidy appearance and easy shaping. It tolerates pruning well and thrives in both sun and partial shade, making it a versatile and low-maintenance option for garden structure.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#boxwood_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--fiddlemodal-->
+                <div class="modal" id="boxwood_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Boxwood</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Ideal for hedges, borders, and topiary designs</li>
+                                    <li>Evergreen foliage provides year-round greenery</li>
+                                    <li>Tolerates pruning and shaping very well</li>
+                                    <li>Can grow in sun or partial shade</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in well-drained soil with regular moisture</li>
+                                    <li>Provide partial shade in hot climates to prevent leaf burn</li>
+                                    <li>Water deeply during dry periods</li>
+                                    <li>Prune in late spring or early summer to maintain shape</li>
+                                    <li>Watch for pests like boxwood leafminer and apply treatment if needed</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Japanese
+                        Maple
+                    </h2>
+                    <p class="plant-text">
+                        Japanese Maple (Acer palmatum) is a graceful deciduous tree or shrub admired for its finely cut leaves and stunning seasonal color changes. Native to Japan, Korea, and China, it showcases shades of green, red, orange, or purple, especially vibrant in autumn. Japanese maples are popular ornamental plants in gardens and landscapes, adding elegance and a touch of tranquility. They thrive in well-drained soil with partial shade, making them ideal for both container gardening and shaded areas.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#japan_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--japanmodal-->
+                <div class="modal" id="japan_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Japanese
+                            Maple</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Offers beautiful foliage with dramatic seasonal colors</li>
+                                    <li>Adds elegance to gardens and landscapes</li>
+                                    <li>Suitable for small spaces and container growing</li>
+                                    <li>Attracts interest and enhances garden design</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in well-drained, slightly acidic soil</li>
+                                    <li>Provide partial shade to protect from intense sun</li>
+                                    <li>Water regularly, especially in dry seasons</li>
+                                    <li>Mulch to retain moisture and protect roots</li>
+                                    <li>Prune gently in late winter to maintain shape</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="japanCarousel10" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/japan.jpg" alt="Mont 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/japan2.jpg" alt="Mont 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/japan3.jpg" alt="Mont 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#japanCarousel10" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#japanCarousel10" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="hostaCarousel11" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/hosta.jpg" alt="Hosta 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/hosta2.jpg" alt="Hosta 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/hosta3.jpg" alt="Hosta 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hostaCarousel11" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hostaCarousel11" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Hosta
+                    </h2>
+                    <p class="plant-text">
+                        Hosta is a hardy, shade-loving perennial plant known for its lush, broad leaves and attractive textures. Native to Asia, hostas come in a variety of leaf colors including green, blue, and variegated patterns. In summer, they also produce tall spikes of lavender or white flowers. Hostas are easy to grow and are perfect for filling in shady garden spaces, adding depth and greenery under trees or along borders.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#hosta_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--evermodal-->
+                <div class="modal" id="hosta_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Hosta</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Thrives in shady areas where many plants struggle</li>
+                                    <li>Adds rich foliage and texture to gardens</li>
+                                    <li>Produces attractive flowers that attract pollinators</li>
+                                    <li>Low maintenance and easy to grow</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in moist, well-drained soil in partial to full shade</li>
+                                    <li>Water regularly to keep soil evenly moistg</li>
+                                    <li>Mulch to retain moisture and suppress weeds</li>
+                                    <li>Divide clumps every few years to promote healthy growth</li>
+                                    <li>Watch for slugs and snails, which are common pests</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Juniper
+                    </h2>
+                    <p class="plant-text">
+                        Juniper is a hardy, evergreen shrub or tree known for its needle-like foliage and berry-like cones. With varieties ranging from ground covers to tall trees, junipers are native to many parts of the Northern Hemisphere. They are widely used in landscaping for their drought tolerance, low maintenance, and year-round greenery. Junipers thrive in sunny locations with well-drained soil and are popular for hedges, rock gardens, and erosion control.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#juni_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--junimodal-->
+                <div class="modal" id="juni_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Juniper</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Evergreen foliage provides year-round color</li>
+                                    <li>Drought-tolerant and low-maintenance</li>
+                                    <li>Helps prevent soil erosion on slopes</li>
+                                    <li>Suitable for hedges, borders, and ground cover</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in full sun with well-drained soil</li>
+                                    <li>Water only when soil is dry—avoid overwatering</li>
+                                    <li>Prune to shape or remove dead branches as needed</li>
+                                    <li>Avoid planting in overly humid or wet areas</li>
+                                    <li>Mulch to retain moisture and suppress weeds</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="juniCarousel12" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/juni.jpg" alt="Ivy 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/juni2.jpg" alt="Ivy 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/juni3.jpg" alt="Ivy 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#juniCarousel12" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#junisCarousel12" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="lilyCarousel13" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/lily.jpg" alt="Fern 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/lily2.jpg" alt="Fern 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/lily3.jpg" alt="Fern 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#lilyCarousel13" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#lilyCarousel13" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Lily
+                        Agapanthus
+                    </h2>
+                    <p class="plant-text">
+                        Agapanthus, also known as Lily of the Nile, is a striking perennial plant known for its tall flower stalks topped with clusters of blue, purple, or white trumpet-shaped blooms. Native to South Africa, it blooms in summer and is popular in garden beds, borders, and containers. Agapanthus has long, strappy green leaves and thrives in sunny locations, adding a bold splash of color and elegance to any garden.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#lily_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--fernmodal-->
+                <div class="modal" id="lily_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Lily
+                            Agapanthus</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Produces beautiful, showy flowers in summer</li>
+                                    <li>Attracts bees, butterflies, and other pollinators</li>
+                                    <li>Excellent for borders, beds, and pots</li>
+                                    <li>Drought-tolerant once established</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in full sun for best flowering</li>
+                                    <li>Use well-drained soil; avoid soggy conditions</li>
+                                    <li>Water regularly during growing season, then reduce in winte</li>
+                                    <li>Deadhead spent blooms to encourage more flowers</li>
+                                    <li>Divide clumps every few years to maintain vigor</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Trumpet
+                        Vine
+                    </h2>
+                    <p class="plant-text">
+                        Trumpet vine (also known as Campsis radicans or trumpet creeper) is a fast-growing, deciduous climbing plant prized for its large, trumpet-shaped flowers in vibrant shades of red, orange, or yellow. Native to the southeastern United States, it thrives in warm climates and can grow vigorously on walls, fences, pergolas, or trellises. Its striking blooms appear in summer and attract hummingbirds and pollinators, making it a favorite in wildlife-friendly gardens. While beautiful, it can become invasive if not managed properly.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#trumpet_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--dramodal-->
+                <div class="modal" id="trumpet_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Trumpet
+                            Vine</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Attracts hummingbirds, bees, and butterflies with its nectar-rich flowers</li>
+                                    <li>Adds dramatic color and height to landscapes</li>
+                                    <li>Provides dense foliage for privacy or shade on structures</li>
+                                    <li>Drought-tolerant and resilient once established</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in full sun for best flowering</li>
+                                    <li>Use well-drained soil but tolerate a range of soil types</li>
+                                    <li>Prune regularly to control its rapid growth and prevent invasiveness</li>
+                                    <li>Provide strong support like a sturdy trellis or fence</li>
+                                    <li>Water moderately, especially during the first growing season to establish root</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="trumpetCarousel14" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/trumpet.jpg" alt="Dra 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/trumpet2.jpg" alt="Dra 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/trumpet3.jpg" alt="Dra 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#trumpetCarousel14" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#trumpetCarousel14" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="cleCarousel15" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/clema.jpg" alt="Crassula 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/clema2.jpg" alt="Crassula 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/clema3.jpg" alt="Crassula 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cleCarousel15" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cleCarousel15" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Clematis
+                    </h2>
+                    <p class="plant-text">
+                        Clematis is a popular flowering vine known for its stunning, colorful blooms that come in a variety of shapes and sizes. Belonging to the buttercup family, Clematis thrives in temperate climates and is often grown on trellises, fences, or walls for decorative purposes. With proper care, these hardy climbers can bloom from spring to fall, adding beauty and vertical interest to gardens. There are many varieties, including large-flowered hybrids, small bell-shaped flowers, and even evergreen types.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#cle_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--clemodal-->
+                 <div class="modal" id="cle_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Clematis</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Adds vertical beauty and color to gardens, fences, and walls</li>
+                                    <li>Attracts pollinators such as bees and butterflies</li>
+                                    <li>Provides natural privacy screening when grown thickly</li>
+                                    <li>Offers seasonal interest with long-lasting and diverse blooms</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in well-drained soil with roots in shade and top growth in sunlight</li>
+                                    <li>Water regularly, especially during dry periodss</li>
+                                    <li>Use mulch to keep roots cool and moist</li>
+                                    <li>Prune according to the type (early-, mid-, or late-flowering varieties)</li>
+                                    <li>Support with a trellis or climbing structure for healthy growth</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Kiss
+                        Me
+                        Quick
+                    </h2>
+                    <p class="plant-text">
+                        Kiss Me Quick (also known as Portulaca pilosa or Brunfelsia pauciflora in some cases, depending on the region) is a charming flowering plant appreciated for its bright, colorful blooms and low-growing habit. The most common variety called Kiss Me Quick is Portulaca pilosa, a groundcover-type succulent that produces small pink to purple flowers and thrives in sunny, dry conditions. It's often used in garden borders, rock gardens, or containers due to its easy maintenance and cheerful appearance.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="#kiss_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--kissmodal-->
+                <div class="modal" id="kiss_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Kiss
+                            Me
+                        Quick</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Provides vibrant, eye-catching color to gardens and containers</li>
+                                    <li>Drought-tolerant and well-suited for hot, sunny climatess</li>
+                                    <li>Attracts butterflies and beneficial pollinators</li>
+                                    <li>Excellent groundcover that helps prevent soil erosion</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in full sun for best blooming results</li>
+                                    <li>Use sandy, well-drained soil to avoid root rot</li>
+                                    <li>Water sparingly—overwatering can harm the plant</li>
+                                    <li>Trim spent flowers to encourage new blooms</li>
+                                    <li>Protect from frost, as it's sensitive to cold temperatures</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="kissCarousel16" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/kissme.jpg" alt="Cala 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/kissme3.jpg" alt="Cala 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/kissme2.jpg" alt="Cala 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#kissCarousel16" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#kissCarousel16" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="colCarousel17" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/cole.jpg" alt="Dieff 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/cole2.jpg" alt="Dieff 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/cole3.jpg" alt="Dieff 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#colCarousel17" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#colCarousel17" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Coleus
+                    </h2>
+                    <p class="plant-text">
+                        Coleus is a colorful ornamental plant known for its striking, multi-colored foliage in shades of green, red, yellow, pink, and purple. Belonging to the mint family (Lamiaceae), coleus is grown more for its leaves than its small flowers. It can be grown as an annual in cooler climates or a perennial in warm, tropical areas. Whether planted in garden beds or containers, coleus adds vibrant contrast and texture to any space.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="col_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--colmodal-->
+                 <div class="modal" id="col_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Coleus</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Provides bold, colorful foliage for year-round visual interest</li>
+                                    <li>Grows well in both sun and shade, depending on the variety</li>
+                                    <li>Ideal for containers, borders, and indoor displays</li>
+                                    <li>Easy to propagate from cuttings for more plants</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in well-drained soil and water regularly to keep soil moist</li>
+                                    <li>Place in partial shade or filtered sunlight for best leaf color</li>
+                                    <li>Pinch off flower spikes to encourage more leaf growth</li>
+                                    <li>Fertilize lightly every 2–4 weeks during growing season</li>
+                                    <li>Protect from cold, as coleus is sensitive to frost</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Elephant
+                        Ear
+                    </h2>
+                    <p class="plant-text">
+                        Elephant Ear is a tropical plant known for its large, heart-shaped leaves that resemble an elephant's ear. Belonging to genera such as Colocasia, Alocasia, and Xanthosoma, these plants are often grown for their dramatic foliage rather than flowers. They thrive in warm, humid environments and are commonly used in landscape designs to create a bold, exotic look. Some types grow in water gardens, while others do well in containers or garden beds.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant
+                    mb-3"><a href="ele_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>                                                                                                                                                                                                                                                                                                                                                                                            
+                </div>
+                 <!--eleamodal-->
+                 <div class="modal" id="ele_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Elephant
+                            Ear</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Adds bold, tropical flair to gardens and indoor spaces</li>
+                                    <li>Can be used to create privacy or shaded areas</li>
+                                    <li>Suitable for both soil and aquatic planting</li>
+                                    <li>Some varieties have edible parts (after proper preparation)</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Plant in rich, well-drained soil with plenty of organic matter</li>
+                                    <li>Water regularly to keep the soil consistently moist</li>
+                                    <li>Place in partial shade to full sun depending on the variety</li>
+                                    <li>Fertilize monthly during the growing season</li>
+                                    <li>Protect from frost or bring indoors during cold weather</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="eleCarousel18" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/ele.jpg" alt="Areca 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/ele2.jpg" alt="Areca 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/ele3.jpg" alt="Areca 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#eleCarousel18" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#eleCarousel18" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+    <a href="#top" class="btn scroll-up">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+</body>
+</html>    

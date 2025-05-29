@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Growing Roots | Indoor Gardening</title>
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="image/favi.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="shasha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="indoor.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+<body>
+    <a href="#top" class="btn scroll-up">
+        <i class="bi bi-arrow-up-square-fill"></i>
+      </a>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle active-state" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"
+    style="margin-top: 20px">
+        <div class="row
+        d-flex
+        align-items-center">
+            <div class="col-md-6">
+                <span
+                style="font-size: 45px;"
+                id="indoor">Indoor</span>
+                <span
+                style="font-size: 45px;
+                color: #3b5732;"
+                id="gardening"
+                class="ms-2">Gardening</span>
+                <br>
+                <em
+                style="color: #91b257;">Why
+                it
+                matters</em>
+                <p
+                style="margin-top: 10px;">Indoor gardening fulfills those without a particular garden despite the desire to plant. There are specific indoor plants that can be planted in your house without much sunlight needed. Regardless, you should know a proper way of maintaining them.</p>
+                <p
+                style="margin-top: 10px;">Here comes a
+                chance to explore a range of indoor plants provided with detailed guidance on how to take care of them. Embrace the beauty of green with us!</p>
+            </div>
+            <div class="col-md-5
+            ms-3
+            col-sm-12">
+               <div class="row">
+                <div class="col-md-8
+                col-sm-12
+                d-flex
+                justify-content-center
+                align-items-center">
+                    <img src="finalimg/Image (34).jpg" alt="heroplant"
+                    width="300px"
+                    height="420px"
+                    id="herolarge">
+                </div>
+                <div class="col-md-4">
+                    <img src="finalimg/indoor-plants-studio 3.jpg" alt="heroplant2"
+                    width="200px"
+                    height="200px"
+                    id="herosmall1">
+                    <img src="finalimg/Image (36).jpg" alt="heroplant2"
+                    width="200px"
+                    height="200px"
+                    style=" margin-top: 20px;"
+                    id="herosmall2">
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="container
+    mt-5">
+        <div id="catalogCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/snakeplant.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Snake
+                                        Plant
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/spiderplant3.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Spider
+                                        Plant
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/peace.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Peace
+                                        Lily
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/pothos.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Pothos
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/aloe.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Aloe
+                                        Vera
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/zz2.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">ZZ
+                                        Plant
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/rubber.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Rubber
+                                        Plant
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/philo.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Philodendron
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/fiddle.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Fiddle
+                                        Leaf
+                                        Fig
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#catalogCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#catalogCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container
+    mt-5">
+        <div id="catalogCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/mont.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Monstera
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/ever.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Chinese
+                                        Evergreen
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/ivy.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">English
+                                        Ivy
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/fern.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Boston
+                                        Fern
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/dra.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Dracaena
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/jade.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Jade
+                                        Plant(Crassula)
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item
+                active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/cala.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Calathea
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/dieff.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Dieffenbachia(Dumb
+                                        Cane)
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="finalimg/areca.jpg" class="card-img-top" alt="flowery">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Areca
+                                        Palm
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#catalogCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#catalogCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="snakeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/snakeplant.jpg" alt="Snake 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/snakeplant2.jpg" alt="Snake 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/snakeplant3.jpg" alt="Snake 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#snakeCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#snakeCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Snake Plant</h2>
+                    <p class="plant-text">
+                        The Snake Plant, also known as Mother-in-law’s tongue is a hardy, low-maintenance houseplant known for its tall, stiff, upright leaves. The leaves are sword-shaped and can grow up to 3 feet tall. They are typically green with horizontal bands of grey-green or yellow edges, giving a striped, snake-like appearance.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#snake_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--snakemodal-->
+                <div class="modal" id="snake_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Snake Plant</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Removes toxins like formaldehyde, benzene, and xylene</li>
+                                    <li>Low maintenance: Needs little water and tolerates low light</li>
+                                    <li>Aesthetic: Adds modern, clean lines to home décor</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers indirect sunlight but tolerates low light</li>
+                                    <li>Water: Water only when soil is dry (about every 2–4 weeks)</li>
+                                    <li>Soil: Well-draining potting mix</li>
+                                    <li>Temperature: Thrives in 18–27°C (65–80°F)</li>
+                                    <li>Toxicity: Mildly toxic to pets if ingested</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Spider
+                        Plant
+                    </h2>
+                    <p class="plant-text">
+                        The Spider Plant is a popular indoor plant known for its graceful, arching leaves and baby plantlets ("spiderettes") that dangle down like spiders on a web. The leaves are long, slender, and often variegated with white or yellow stripes.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#spider_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--spidermodal-->
+                <div class="modal" id="spider_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Spider Plant</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Removes pollutants like formaldehyde and carbon monoxide</li>
+                                    <li>Pet-friendly: Non-toxic to cats and dogs</li>
+                                    <li>Easy to grow: Ideal for beginners and classrooms</li>
+                                    <li>Decorative: Looks great in hanging baskets or high shelves</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Bright, indirect sunlight; tolerates low light</li>
+                                    <li>Water: Water when the top inch of soil is dry; avoid overwatering</li>
+                                    <li>Soil: Well-draining potting mix</li>
+                                    <li>Temperature: Thrives in 18–24°C (65–75°F)</li>
+                                    <li>Humidity: Enjoys occasional misting but adapts well to normal humidity</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="spiderCarousel2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/spiderplant.jpg" alt="Spider 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/spiderplant2.jpg" alt="Spider 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/spiderplant3.jpg" alt="Spider 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#spiderCarousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#spiderCarousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="peaceCarousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/peace.jpg" alt="Peace 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/peace2.jpg" alt="Peace 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/peace3.jpg" alt="Peace 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#peaceCarousel3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#peaceCarousel3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Peace Lily</h2>
+                    <p class="plant-text">
+                        The Peace Lily is a beautiful indoor plant known for its elegant white blooms and lush, deep green leaves. The “flower” is actually a specialized white leaf called a spathe that surrounds a cream-colored spadix (flower spike). It symbolizes peace, purity, and healing, making it a popular choice for homes and offices.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#peace_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--peacemodal-->
+                 <div class="modal" id="peace_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Peace Lily</h2>
+                            </div>
+                            <div class="modal-body
+                            p-2">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Filters harmful toxins like formaldehyde, benzene, and ammonia</li>
+                                    <li>Visually calming: Adds a serene, elegant touch to indoor spaces</li>
+                                    <li>Low maintenance: Grows well in low to medium light</li>
+                                    <li>Symbolic: Commonly used in homes for emotional comfort or in remembrance</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright, indirect light; tolerates low light but may bloom less</li>
+                                    <li>Water: Keep soil slightly moist but not soggy; droops when thirsty (a natural signal!)</li>
+                                    <li>Soil: Rich, well-draining potting mix</li>
+                                    <li>Temperature: Thrives in 18–26°C (65–80°F)</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Pothos
+                    </h2>
+                    <p class="plant-text">
+                        Pothos is a fast-growing, trailing vine known for its heart-shaped, glossy leaves that come in various shades of green, often variegated with white, yellow, or light green. It’s one of the easiest houseplants to care for and is great for beginners.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#pothos_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="pothosCarousel4" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/pothos3.jpg" alt="Pothos 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/pothos2.jpg" alt="Pothos 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/pothos.jpg" alt="Pothos 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#pothosCarousel4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#pothosCarousel4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <!--pothosmodal-->
+                 <div class="modal" id="pothos_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Pothos</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Removes indoor air pollutants like formaldehyde and xylene</li>
+                                    <li>Low maintenance: Survives low light and irregular watering</li>
+                                    <li>Versatile: Grows in soil or water (can be propagated easily in water)</li>
+                                    <li>Mood booster: Adds a vibrant touch to indoor environments</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright, indirect light but tolerates low light</li>
+                                    <li>Water: Water when the top inch of soil is dry; do not overwater</li>
+                                    <li>Soil: Well-draining potting mix</li>
+                                    <li>Temperature: Best in 18–29°C (65–85°F)</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="aloeCarousel5" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/aloe.jpg" alt="Aloe 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/aloe2.jpg" alt="Aloe 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/aloe3.jpg" alt="Aloe 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#aloeCarousel5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#aloeCarousel5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Aloe
+                        Vera
+                    </h2>
+                    <p class="plant-text">
+                        Aloe Vera is a succulent plant with thick, fleshy, green leaves that are filled with a soothing gel. The leaves grow in a rosette pattern and are often edged with soft, white spines. It’s well-known for its medicinal properties, especially in treating skin burns, cuts, and dryness.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#aloe_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--aloemodal-->
+                 <div class="modal" id="aloe_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Aloe Vera</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Medicinal use: Gel treats burns, wounds, sunburns, and dry skin</li>
+                                    <li>Air-purifying: Helps remove pollutants like benzene and formaldehyde</li>
+                                    <li>Low maintenance: Requires little watering and care</li>
+                                    <li>Natural décor: Adds a fresh, modern touch to windowsills or desks</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Needs bright, direct or indirect sunlight</li>
+                                    <li>Water: Water deeply but infrequently—let soil dry out completely between waterings</li>
+                                    <li>Soil: Cactus or succulent mix (well-draining)</li>
+                                    <li>Temperature: Thrives in 18–27°C (65–80°F)</li>
+                                    <li>Toxicity: Mildly toxic to pets if ingested (may cause vomiting or diarrhea)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">ZZ
+                        Plant
+                    </h2>
+                    <p class="plant-text">
+                        The ZZ Plant is a striking, low-maintenance houseplant with thick, waxy, dark green leaves that grow in a graceful, wand-like shape. It is well known for its tolerance to neglect, low light, and drought, making it perfect for beginners and busy people.                                                                                                                                                                             
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#zz_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--zzmodal-->
+                 <div class="modal" id="zz_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">ZZ
+                            Plant</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Removes toxins such as xylene, toluene, and benzene</li>
+                                    <li>Very hardy: Tolerates low light, irregular watering, and dry indoor air</li>
+                                    <li>Decorative: Sleek and stylish, fitting for modern interiors</li>
+                                    <li>Low allergen: Rarely causes allergies or pests</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Best in low to bright indirect light; avoid direct sunlight</li>
+                                    <li>Water: Allow the soil to dry out completely between waterings</li>
+                                    <li>Soil: Well-draining mix (cactus or succulent mix works well)</li>
+                                    <li>Temperature: Ideal in 18–26°C (65–78°F)</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested (can cause stomach upset)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="zzCarousel6" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/zz2.jpg" alt="ZZ 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/zz.jpg" alt="ZZ 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/zz3.jpg" alt="ZZ 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#crassulaCarousel6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#crassulaCarousel6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="rubberCarousel7" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/rubber.jpg" alt="Rubber 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/rubber2.jpg" alt="Rubber 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/rubber3.jpg" alt="Rubber 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#rubberCarousel7" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#rubberCarousel7" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Rubber
+                        Plant
+                    </h2>
+                    <p class="plant-text">
+                        The Rubber Plant is a bold, attractive indoor plant with large, thick, and glossy leaves. Depending on the variety, the leaves can be deep green, burgundy, or variegated with creamy white edges. It can grow tall and tree-like indoors with proper care, making it a popular statement plant.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#rubber_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--rubbermodal-->
+                <div class="modal" id="rubber_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Rubber
+                            Plant</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Helps remove toxins like formaldehyde from indoor air</li>
+                                    <li>Stylish: Adds a tropical and modern touch to living spaces</li>
+                                    <li>Easy to train: Can be shaped or pruned into a bushy or tree form</li>
+                                    <li>Low fuss: Requires minimal attention once established</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright, indirect light; tolerates some direct sunlight</li>
+                                    <li>Water: Water when the top 1–2 inches of soil are dry; don’t let it sit in water</li>
+                                    <li>Soil: Well-draining potting mix (with peat, pine bark, and perlite)</li>
+                                    <li>Temperature: Ideal in 16–24°C (60–75°F)</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested; the sap may irritate skin</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Philodendron
+                    </h2>
+                    <p class="plant-text">
+                        Philodendron is a popular and diverse group of tropical houseplants known for their lush, trailing or upright foliage. The most common type, Heartleaf Philodendron (Philodendron hederaceum), has soft, heart-shaped green leaves and grows as a vine. Other types include upright varieties with large, split or lobed leaves.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#philo_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--philomodal-->
+                <div class="modal" id="philo_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Philodendron</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Removes harmful toxins like formaldehyde and trichloroethylene</li>
+                                    <li>Easy care: Grows well in low to bright indirect light</li>
+                                    <li>Versatile: Suitable for hanging baskets, pots, or trained up a moss pole</li>
+                                    <li>Elegant: Adds a tropical and calming touch to interiors</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Bright, indirect light preferred; tolerates low light</li>
+                                    <li>Water: Keep soil lightly moist, but allow the top inch to dry out before watering again</li>
+                                    <li>Soil: Well-draining indoor potting mix</li>
+                                    <li>Temperature: Ideal in 18–27°C (65–80°F)</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested (can cause mouth and stomach irritation)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="philoCarousel8" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/philo.jpg" alt="Philo 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/philo2.jpg" alt="Philo 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/philo3.jpg" alt="Philo 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#philoCarousel8" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#philoCarousel8" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="fiddleCarousel9" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/fiddle.jpg" alt="Fiddle 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/fiddle2.jpg" alt="Fiddle 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/fiddle3.jpg" alt="Fiddle 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#fiddleCarousel9" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#fiddleCarousel9" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Fiddle
+                        leaf
+                        fig
+                    </h2>
+                    <p class="plant-text">
+                        The Fiddle Leaf Fig is a tall, dramatic indoor plant known for its large, violin-shaped leaves that are deep green and leathery with prominent veins. It’s a favorite for modern interiors due to its bold, sculptural appearance and tree-like form.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#fiddle_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--fiddlemodal-->
+                <div class="modal" id="fiddle_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Fiddle
+                            leaf
+                        fig</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Removes indoor pollutants</li>
+                                    <li>Stylish: Very popular in interior design for its bold and elegant look</li>
+                                    <li>Mood booster: Adds greenery and vibrancy to indoor spaces</li>
+                                    <li>Customizable: Can be pruned and shaped into a tree or bush form</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Needs bright, indirect light; avoid direct sunlight on leaves</li>
+                                    <li>Water: Water when the top 2 inches of soil feel dry; do not overwater</li>
+                                    <li>Soil: Well-draining, rich potting mix</li>
+                                    <li>Temperature: Prefers 18–24°C (65–75°F) and stable conditions</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested (can cause irritation)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Monstera
+                    </h2>
+                    <p class="plant-text">
+                        Monstera is a popular tropical houseplant recognized for its large, glossy, heart-shaped leaves with natural holes and splits, giving it a unique "Swiss cheese" appearance. It’s a climbing plant that can grow quite large indoors, adding a lush, exotic vibe to any room.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#mont_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--montmodal-->
+                <div class="modal" id="mont_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Monstera</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Helps remove toxins from indoor air</li>
+                                    <li>Low maintenance: Tolerates moderate light and watering</li>
+                                    <li>Versatile: Suitable for pots or climbing supports</li>
+                                    <li>Aesthetic: Bold and dramatic foliage that is highly decorative</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright, indirect light but can tolerate low light</li>
+                                    <li>Water: Water when the top inch of soil feels dry; avoid overwatering</li>
+                                    <li>Soil: Well-draining potting mix rich in organic matter</li>
+                                    <li>Temperature: Thrives between 18–27°C (65–80°F)</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested (causes irritation)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="montCarousel10" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/mont.jpg" alt="Mont 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/mont2.jpg" alt="Mont 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/mont3.jpg" alt="Mont 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#montCarousel10" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#montCarousel10" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="everCarousel11" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/ever.jpg" alt="Ever 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/ever2.jpg" alt="Ever 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/ever3.jpg" alt="Ever 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#everCarousel11" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#everCarousel11" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Chinese
+                        Evergreen
+                    </h2>
+                    <p class="plant-text">
+                        Chinese Evergreen is a popular and easy-to-care-for houseplant known for its attractive, glossy leaves that come in various shades of green, often with silver, cream, or red patterns. It is appreciated for its tolerance to low light and its ability to brighten up indoor spaces with its lush foliage.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#ever_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--evermodal-->
+                <div class="modal" id="ever_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Chinese
+                            Evergreen</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Low light tolerant: Thrives in dim indoor conditions</li>
+                                    <li>Air-purifying: Removes toxins such as formaldehyde and benzene</li>
+                                    <li>Easy care: Requires minimal watering and attention</li>
+                                    <li>Decorative: Brightens spaces with its patterned leaves</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers low to medium indirect light; avoid direct sun which can scorch leaves</li>
+                                    <li>Water: Water when the top inch of soil is dry; avoid overwatering</li>
+                                    <li>Soil: Well-draining potting mix</li>
+                                    <li>Temperature: Best between 18–24°C (65–75°F)</li>
+                                    <li>Toxicity: Mildly toxic to pets and humans if ingested</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">English
+                        Ivy
+                    </h2>
+                    <p class="plant-text">
+                        English Ivy is a classic trailing or climbing indoor plant known for its small, lobed, dark green leaves with white veins. It grows quickly and can be trained to climb walls, trellises, or cascade from hanging baskets, making it a versatile and decorative houseplant.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#ivy_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--ivymodal-->
+                <div class="modal" id="ivy_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">English
+                            Ivy</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Helps remove airborne mold and toxins like benzene</li>
+                                    <li>Versatile: Can grow in low to bright indirect light</li>
+                                    <li>Easy propagation: Rooting from cuttings is simple</li>
+                                    <li>Classic look: Adds a traditional, natural touch to indoor décor</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Classic look: Adds a traditional, natural touch to indoor décor</li>
+                                    <li>Water: Keep soil moist but not soggy; reduce watering in winter</li>
+                                    <li>Soil: Well-draining potting soil</li>
+                                    <li>Temperature: Thrives in cooler indoor temps, ideally 15–21°C (59–70°F)</li>
+                                    <li>Toxicity: Toxic to pets and humans if ingested (can cause nausea or skin irritation)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="ivyCarousel12" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/ivy.jpg" alt="Ivy 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/ivy2.jpg" alt="Ivy 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/ivy3.jpg" alt="Ivy 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ivyCarousel12" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#ivyCarousel12" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="fernCarousel13" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/fern.jpg" alt="Fern 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/fern2.jpg" alt="Fern 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/fern3.jpg" alt="Fern 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#fernCarousel13" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#fernCarousel13" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Boston
+                        Fern
+                    </h2>
+                    <p class="plant-text">
+                        The Boston Fern is a lush, graceful houseplant known for its arching fronds made up of many small leaflets. Its feathery, bright green foliage gives a fresh, airy appearance, making it ideal for hanging baskets or pedestal planters.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#fern_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--fernmodal-->
+                <div class="modal" id="fern_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Boston
+                            Fern</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Known for filtering indoor air and increasing humidity</li>
+                                    <li>Classic charm: Adds softness and natural beauty to interiors</li>
+                                    <li>Non-toxic: Safe for pets and children</li>
+                                    <li>Humidity booster: Great for bathrooms or kitchens with higher moisture</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright, indirect light; avoid direct sun</li>
+                                    <li>Water: Keep soil consistently moist, not soggy; mist often in dry air</li>
+                                    <li>Soil: Rich, well-draining potting mix (peat-based works well)</li>
+                                    <li>Temperature: Best between 16–24°C (60–75°F); dislikes cold drafts</li>
+                                    <li>Humidity: High humidity needed—mist regularly or use a humidifier</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Dracaena
+                    </h2>
+                    <p class="plant-text">
+                        Dracaena is a popular indoor plant with long, narrow leaves that often have green, yellow, or white stripes. It comes in several varieties (like Dracaena marginata and Dracaena fragrans), most of which grow upright with a woody stem, resembling a small palm or tree. It’s well-loved for being low-maintenance and stylish.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#dra_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--dramodal-->
+                <div class="modal" id="dra_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Dracaena</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Removes common indoor toxins like formaldehyde and xylene</li>
+                                    <li>Drought-tolerant: Needs little water and is great for forgetful plant owners</li>
+                                    <li>Stylish: Makes a great floor plant with minimal fuss</li>
+                                    <li>Adaptable: Grows in various light levels and indoor environments</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright, indirect light; tolerates low light but may lose color</li>
+                                    <li>Water: Water when the top inch of soil is dry; avoid overwatering</li>
+                                    <li>Soil: Well-draining, loose potting mix</li>
+                                    <li>Temperature: Thrives in 18–24°C (65–75°F)</li>
+                                    <li>Toxicity: Toxic to pets if ingested (can cause vomiting or drooling)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="draCarousel14" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/dra.jpg" alt="Dra 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/dra2.jpg" alt="Dra 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/dra3.jpg" alt="Dra 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#draCarousel14" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#draCarousel14" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="jadeCarousel15" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/jade.jpg" alt="Crassula 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/jade2.jpg" alt="Crassula 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/jade3.jpg" alt="Crassula 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#jadeCarousel15" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#jadeCarousel15" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Jade
+                        Plant
+                    </h2>
+                    <p class="plant-text">
+                        The Jade Plant is a popular succulent with thick, oval-shaped, glossy green leaves and woody stems that give it a miniature tree-like appearance. It is often considered a symbol of good luck and prosperity and is especially valued in homes and offices for its neat, tidy look and ease of care.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#jade_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--jademodal-->
+                 <div class="modal" id="jade_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Jade
+                            Plant</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Low maintenance: Needs very little water and care</li>
+                                    <li>Symbolic: Often associated with wealth and success in Feng Shui</li>
+                                    <li>Long-living: Can thrive for decades with proper care</li>
+                                    <li>Air purifier: Helps improve indoor air quality</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright light, including some direct sunlight</li>
+                                    <li>Water: Allow soil to dry out completely between waterings; avoid overwatering</li>
+                                    <li>Soil: Well-draining cactus or succulent mix</li>
+                                    <li>Temperature: Likes warm temperatures between 18–24°C (65–75°F); protect from frost</li>
+                                    <li>Toxicity: Mildly toxic to pets if ingested (can cause nausea or vomiting)</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Calathea
+                    </h2>
+                    <p class="plant-text">
+                        Calatheas are stunning tropical houseplants known for their vibrant, patterned foliage. Their leaves come in a variety of colors and designs — from stripes and spots to purples and deep greens. They get the nickname “prayer plant” because their leaves often fold upward at night, as if in prayer.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#cala_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                <!--calamodal-->
+                <div class="modal" id="cala_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Calathea</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Helps clean the air</li>
+                                    <li>Non-toxic: Safe for pets and children</li>
+                                    <li>Unique movement: Leaf motion adds interest and charm</li>
+                                    <li>Ornamental: Highly decorative for shelves, tables, and floor displays</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers medium to bright indirect light; avoid direct sun</li>
+                                    <li>Water: Keep soil evenly moist but not soggy; loves humidity</li>
+                                    <li>Soil: Well-draining, peat-based or rich potting mix</li>
+                                    <li>Temperature: Thrives in 18–24°C (65–75°F); avoid cold drafts</li>
+                                    <li>Humidity: High humidity is essential — mist often or use a humidifier</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="calaCarousel16" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/cala.jpg" alt="Cala 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/cala2.jpg" alt="Cala 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/cala3.jpg" alt="Cala 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#calaCarousel16" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#calaCarousel16" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="dieffCarousel17" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/dieff.jpg" alt="Dieff 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/dieff2.jpg" alt="Dieff 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/dieff3.jpg" alt="Dieff 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dieffCarousel17" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dieffCarousel17" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="plant-title">Dieffenbachia(Dumb Cane)
+                    </h2>
+                    <p class="plant-text">
+                        Dieffenbachia is a bold and beautiful indoor plant known for its large, broad leaves that are often variegated with white, cream, or yellow patterns. It adds a tropical, lush look to homes and offices and is easy to care for, making it a favorite among houseplant lovers.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#dieff_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>
+                </div>
+                 <!--dieffmodal-->
+                 <div class="modal" id="dieff_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Dieffenbachia</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Helps clean indoor air</li>
+                                    <li>Low effort: Doesn’t require much light or frequent watering</li>
+                                    <li>Fast-growing: Adds quick greenery to indoor spaces</li>
+                                    <li>Visually striking: Eye-catching patterns brighten rooms</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Prefers bright, indirect light but tolerates shade</li>
+                                    <li>Water: Water when the top inch of soil is dry; do not let soil stay soggy</li>
+                                    <li>Soil: Well-draining potting mix</li>
+                                    <li>Temperature: Ideal range is 18–26°C (65–80°F); avoid cold drafts</li>
+                                    <li>Toxicity: Highly toxic to pets and humans if ingested; can cause swelling and pain in the mouth and throat</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="plant-card">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="plant-title">Areca
+                        Palm
+                    </h2>
+                    <p class="plant-text">
+                        The Areca Palm is a graceful and elegant indoor plant with feathery, arching fronds that grow in clusters. Its lush, tropical look makes it one of the most popular indoor palms. It’s pet-friendly and great for creating a natural, breezy vibe indoors.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn
+                    btn-plant"><a href="#areca_modal" class="nav-link" data-bs-toggle="modal">Click to see more!</a></button>                                                                                                                                                                                                                                                                                                                                                                                                    
+                </div>
+                 <!--arecamodal-->
+                 <div class="modal" id="areca_modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header
+                            d-flex
+                            align-items-center
+                            justify-content-center">
+                                <h2 class="modal-title
+                                plant-title">Areca
+                            Palm</h2>
+                            </div>
+                            <div class="modal-body
+                            p-3">
+                                <br>
+                                <mark>Benefits:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Air-purifying: Excellent at removing indoor air toxins</li>
+                                    <li>Humidifying: Naturally increases indoor humidity</li>
+                                    <li>Pet-safe: Non-toxic to cats and dogs</li>
+                                    <li>Tropical look: Brings a resort-like, calming feel to interiors</li>
+                                </ul>
+                                <br>
+                                <mark>Care Tips:</mark>
+                                <br><br>
+                                <ul>
+                                    <li>Light: Thrives in bright, indirect light; avoid direct sun which can scorch leavese</li>
+                                    <li>Water: Keep soil lightly moist; do not let it completely dry or become soggy</li>
+                                    <li>Soil: Well-draining potting mix with good aeration</li>
+                                    <li>Temperature: Prefers 18–24°C (65–75°F); sensitive to cold and drafts</li>
+                                    <li>Humidity: Likes higher humidity—mist regularly or use a humidifier</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-plant" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="arecaCarousel18" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <img src="finalimg/areca.jpg" alt="Areca 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/areca2.jpg" alt="Areca 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="finalimg/areca3.jpg" alt="Areca 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#arecaCarousel18" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#arecaCarousel18" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <a href="#top" class="btn scroll-up">
+        <i class="bi bi-arrow-up-square-fill"></i>
+    </a>                                                                                                                                                                                                                                                                                                                                                                                 
+</body>
+</html>

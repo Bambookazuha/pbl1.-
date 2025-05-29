@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing Roots | Edible plants</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="image/favi.png" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="edible.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- Bootstap CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--AOS Link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            background-color: #F5fffa; 
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .nav-pills .nav-item .nav-link {
+            color: #000000;
+            border-radius: none;
+            transition: 0.3s;
+        }
+        .nav-pills .nav-item .nav-link.active {
+            background-color: #a4c769;
+            color: white;
+        }
+
+        .scroll-up {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #3b5732;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+        }
+        
+        .scroll-up:hover {
+            background: #3b5732;
+        }
+        
+        .bi-arrow-up-square-fill {
+        font-size: 25px;
+        color: white;
+        }
+        p {
+            font-size: 19px;
+        }
+        ul {
+            font-size: 19px;
+        }
+        .offcanvas{
+        background-color: #91b257;
+      }
+    </style>
+</head>
+<body>
+    <a id="top"></a>
+   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html active-state">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle active-state" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 mb-3" >
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-8 mt-3" style="margin-right: 95.8px;">
+                <h1 class="text">Grow to Nourish, Grow to Sustain</h1>
+                <p style="font-size: 18px;">
+                In this page, you will explore how edible plants can support both your health and a more sustainable
+                lifestyle. You’ll learn about different types of edible plants such as fruits, vegetables, herbs, and
+                plant-based protein sources. For each one, we provide detailed information about the plant, including
+                its needs and benefits, along with step-by-step guides on how to grow it — from soil preparation and planting
+                to daily care and harvesting. You’ll also find ideas on how to reuse your harvest in eco-friendly ways, making the most of what you grow. 
+                </p>
+                <a href="#hero" class="btn btn-button c-button">Scroll down <i class="bi bi-arrow-down-circle"></i></a>
+                </div>
+            <div class="col-lg-5 col-md-4">
+                <img src="image/animation.gif" class="steps" alt="sintro" width="500px" style="background-color: #F5fffa;">
+            </div>    
+        </div>
+    </div>
+
+    <!-- Edible start -->
+    <div class="container mt-5" id="hero">
+        <ul class="nav nav-pills justify-content-center" style="background-color: #91b257; box-shadow: 0 0 6px #3b5732;">
+            <ul class="nav nav-pills justify-content-center" id="season">
+                <li class="nav-item ms-2"><a href="#fruits" class="nav-link active" data-bs-toggle="tab">Fruits</a></li>
+                <li class="nav-item ms-2"><a href="#vege" class="nav-link" data-bs-toggle="tab">Vegetables</a></li>
+                <li class="nav-item ms-2"><a href="#herbs" class="nav-link" data-bs-toggle="tab">Herbs</a></li>
+                <li class="nav-item ms-2"><a href="#protein" class="nav-link" data-bs-toggle="tab">Plant based protein source</a></li>
+            </ul>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="fruits">
+                <div class="row mt-4 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/strawberry.png" alt="oranges" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Strawberry</h2><hr>
+                                <p>Strawberries are low-growing plants that produce sweet, juicy fruits with tiny seeds on the surface.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 8 to 10 hours of full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.5 per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam, slightly acidic</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#strawberry" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                    <!-- modal for card -->
+                        <div class="modal" id="strawberry" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Strawberry's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Strawberry Planting Guide:</h4><hr>
+                                            <li>Select a sunny site with well-drained sandy loam soil.</li>
+                                            <li>Remove all weeds and prepare soil by loosening and adding organic matter.</li>
+                                            <li>Purchase certified disease-free plants with healthy crowns and roots.</li>
+                                            <li>Plant crowns so roots are just covered by soil, spacing 12–18 inches apart.</li>
+                                            <li>Water immediately after planting to settle soil around roots.</li>
+                                            <li>Mulch with straw or pine needles to retain moisture and suppress weeds.</li>
+                                            <li>Pinch off flowers for 4–6 weeks after planting to encourage root establishment.</li>
+                                            <li>Maintain regular watering and weed control; harvest begins about 6 weeks after flowering.</li>
+                                            <li>After 2–3 months, enjoy your strawberry harvest!</li>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-3 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-9">
+                                <h2>Orange</h2><hr>
+                                <p>Orange trees are small evergreen citrus trees producing sweet, segmented fruits rich in vitamin C.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li>Sunlight Needed: 6 to 8 hours of full sun daily</li>
+                                    <li>Water Needs: 4–6 liters per hour depending on tree size</li>
+                                    <li>Soil Type: Well-drained sandy or loamy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#orange" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/oranges.png" alt="oranges" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                        </div>
+                    <!-- modal for card -->
+                        <div class="modal" id="orange" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Orange's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h3>Orange Planting Guide</h3>
+                                            <ul>
+                                                <li>Choose a sunny, frost-protected site with well-draining soil.</li>
+                                                <li>Dig a hole twice as wide and deep as the root ball.</li>
+                                                <li>Amend soil if needed with compost or sand to improve drainage.</li>
+                                                <li>Remove tree gently from pot, avoid root damage.</li>
+                                                <li>Position tree so root crown is level with soil surface.</li>
+                                                <li>Backfill hole with amended soil, pressing gently to remove air pockets.</li>
+                                                <li>Water thoroughly after planting to settle soil.</li>
+                                                <li>Mulch around base and water regularly, especially in spring and summer.</li>
+                                                <li>After 2–3 years, enjoy fresh oranges from your tree!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/grapes.png" alt="oranges" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Grapes</h2><hr>
+                                <p>Grapevines are woody climbing plants that produce clusters of sweet berries used fresh, or for wine.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li>Sunlight Needed: 6 to 8 hours of full sun daily</li>
+                                    <li>Water Needs: 2–3 liters per hour per</li>
+                                    <li>Soil Type: Well-drained loamy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#grapes" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                    <!-- modal for card -->
+                        <div class="modal" id="grapes" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Grapes's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h3>Grapes Planting Guide</h3>
+                                            <ul>
+                                                <li>Purchase dormant, bare-root grapevines from a reputable source.</li>
+                                                <li>Soak roots in water for 2–3 hours before planting.</li>
+                                                <li>Select a sunny site with support structures like a trellis or fence.</li>
+                                                <li>Dig a hole about 12 inches deep and wide, twice root system size.</li>
+                                                <li>Fill hole halfway with soil, place roots, tamp gently, then backfill.</li>
+                                                <li>Water immediately after planting.</li>
+                                                <li>Prune vines to two stems to encourage healthy growth.</li>
+                                                <li>Maintain weekly watering and prune annually to manage growth.</li>
+                                                <li>After 2–3 years, enjoy your homegrown grapes!</li>
+                                            </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-3 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-9">
+                                <h2>Blueberry</h2><hr>
+                                <p>Blueberries are deciduous shrubs producing small, antioxidant-rich blue-black berries.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li>Sunlight Needed: Minimum 6 hours of full sun daily</li>
+                                    <li>Water Needs: 1.5–2 liters per hour</li>
+                                    <li>Soil Type: Acidic, well-drained sandy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#Blueberry" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/blueberry.png" alt="oranges" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                        </div>
+                    <!-- modal for card -->
+                        <div class="modal" id="Blueberry" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Blueberry's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Blueberry Planting Guide</h4><hr>
+                                            <ul>
+                                                <li>Test and amend soil pH to 4.2–5.2 if needed.</li>
+                                                <li>Choose sunny site or raised bed with acidic, well-draining soil.</li>
+                                                <li>Dig holes and mix soil with peat moss or acidic compost.</li>
+                                                <li>Plant bushes with roots spread and crown level with soil.</li>
+                                                <li>Backfill and water thoroughly.</li>
+                                                <li>Apply 2–3 inches organic mulch to conserve moisture.</li>
+                                                <li>Water regularly to keep soil moist but not saturated.</li>
+                                                <li>Prune annually to maintain health and encourage fruiting.</li>
+                                                <li>After 2–3 years, enjoy delicious blueberries from your plants!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/papaya.png" alt="papaya" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Papaya</h2><hr>
+                                <p>Papaya is a fast-growing tropical tree producing sweet, orange flesh fruits often eaten fresh or in salads.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 to 8 hours of full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 3 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#papaya" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                    <!-- modal for card -->
+                        <div class="modal" id="papaya" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Papaya's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Papaya Planting Guide:</h4><hr>
+                                            <ul>
+                                            <li>Choose a sunny location with well-drained soil.</li>
+                                            <li>Plant seeds or seedlings spaced 7-10 feet apart.</li>
+                                            <li>Water regularly to keep soil moist but not waterlogged.</li>
+                                            <li>Fertilize monthly with balanced fertilizer.</li>
+                                            <li>Protect young plants from strong winds.</li>
+                                            <li>Thin fruit clusters to improve size and quality.</li>
+                                            <li>Watch for pests like aphids and treat if needed.</li>
+                                            <li>Harvest fruits when skin turns yellow-orange.</li>
+                                            <li>After 6-12 months, enjoy your fresh papayas!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/pineapple.png" alt="pineapple" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                            <h2>Pineapple</h2><hr>
+                            <p>Pineapple is a tropical bromeliad producing sweet, tangy fruits; easy to grow from the crown of the fruit.</p>
+                            <h4>Growing Requirements:</h4>
+                            <ul>
+                                <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                <li><strong>Soil Type:</strong> Well-drained sandy soil</li>
+                            </ul>
+                            <button class="btn btn-button p-button"><a href="#pineapple" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                    <!-- modal for card -->
+                    <div class="modal" id="pineapple" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <h2 class="modal-title" style="color: #3b5732;">Pineapple's</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <h4>Pineapple Planting Guide:</h4><hr>
+                                        <ul>
+                                        <li>Plant the crown or suckers in well-drained soil.</li>
+                                        <li>Choose a sunny spot with good air circulation.</li>
+                                        <li>Water moderately; avoid waterlogging.</li>
+                                        <li>Fertilize every 6-8 weeks with balanced fertilizer.</li>
+                                        <li>Remove weeds and mulch to conserve moisture.</li>
+                                        <li>Protect from frost and strong winds.</li>
+                                        <li>Watch for mealybugs and pests.</li>
+                                        <li>Harvest when fruit turns golden yellow.</li>
+                                        <li>After 18-24 months, enjoy your homegrown pineapples!</li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 mt-4 cricle">
+                                    <div class="d-flex justify-content-center align-items-center mb-3">
+                                        <img src="image/banana.png" alt="banana" width="200px" height="auto" class="rotate-img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                <h2>Banana</h2><hr>
+                                <p>Banana is a fast-growing tropical herbaceous plant producing sweet, creamy fruits eaten fresh or in cooking.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained fertile loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#banana" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                               </div>
+                            </div>
+                        <!-- modal for card -->
+                        <div class="modal" id="banana" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Banana's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Banana Planting Guide:</h4><hr>
+                                            <ul>
+                                            <li>Plant suckers or tissue-cultured plants in fertile soil.</li>
+                                            <li>Choose a sunny, sheltered location.</li>
+                                            <li>Water deeply and regularly, especially in dry periods.</li>
+                                            <li>Fertilize monthly with high potassium fertilizer.</li>
+                                            <li>Mulch to retain moisture and suppress weeds.</li>
+                                            <li>Remove dead leaves and protect from strong winds.</li>
+                                            <li>Watch for pests like banana weevils.</li>
+                                            <li>Harvest when fruit fingers are plump and full-sized.</li>
+                                            <li>After 9-12 months, enjoy your fresh bananas!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 mt-4 cricle">
+                                    <div class="d-flex justify-content-center align-items-center mb-3">
+                                        <img src="image/guava.png" alt="guava" width="200px" height="auto" class="rotate-img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <h2>Guava</h2><hr>
+                                    <p>Guava is a tropical tree producing sweet, aromatic fruits eaten fresh, juiced, or cooked.</p>
+                                    <h4>Growing Requirements:</h4>
+                                    <ul>
+                                        <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                        <li><strong>Water Needs:</strong> 3 liters per hour</li>
+                                        <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                    </ul>
+                                    <button class="btn btn-button p-button"><a href="#guava" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                                </div>
+                            </div>
+                        <!-- modal for card -->
+                        <div class="modal" id="guava" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Guava's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Guava Planting Guide:</h4><hr>
+                                            <ul>
+                                            <li>Choose a sunny site with well-drained soil.</li>
+                                            <li>Plant seedlings or grafted trees spaced 10-15 feet apart.</li>
+                                            <li>Water regularly to keep soil moist but not soggy.</li>
+                                            <li>Fertilize quarterly with balanced fertilizer.</li>
+                                            <li>Prune to maintain shape and remove dead wood.</li>
+                                            <li>Protect young plants from strong winds.</li>
+                                            <li>Watch for fruit flies and pests.</li>
+                                            <li>Harvest when fruits turn yellow and emit fragrance.</li>
+                                            <li>After 2-4 years, enjoy your guava harvest!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                            <div class="row mb-3">
+                                <div class="col-lg-3 mt-4 cricle">
+                                    <div class="d-flex justify-content-center align-items-center mb-3">
+                                        <img src="image/mango.png" alt="mango" width="200px" height="auto" class="rotate-img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <h2>Mango</h2><hr>
+                                    <p>Mango is a tropical tree producing juicy, sweet fruits eaten fresh, dried, or in cooking.</p>
+                                    <h4>Growing Requirements:</h4>
+                                    <ul>
+                                        <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                        <li><strong>Water Needs:</strong> 4 liters per hour</li>
+                                        <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                    </ul>
+                                    <button class="btn btn-button p-button"><a href="#mango" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                                </div>
+                            </div>
+                        <!-- modal for card -->
+                        <div class="modal" id="mango" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title" style="color: #3b5732;">Mango's</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <ul>
+                                            <h4>Mango Planting Guide:</h4><hr>
+                                            <li>Choose a sunny, well-drained site.</li>
+                                            <li>Plant grafted seedlings spaced 10-15 feet apart.</li>
+                                            <li>Water young trees regularly; reduce watering as tree matures.</li>
+                                            <li>Fertilize twice a year with balanced fertilizer.</li>
+                                            <li>Prune to maintain shape and remove dead branches.</li>
+                                            <li>Protect from strong winds and pests.</li>
+                                            <li>Watch for anthracnose and treat if needed.</li>
+                                            <li>Harvest fruits when mature and slightly soft.</li>
+                                            <li>After 3-5 years, enjoy your homegrown mangoes!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-9">
+                            <h2>Avocado</h2><hr>
+                            <p>Avocado is a tropical tree producing creamy, nutrient-rich fruits popular for fresh eating and cooking.</p>
+                            <h4>Growing Requirements:</h4>
+                            <ul>
+                                <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                <li><strong>Water Needs:</strong> 3 liters per hour</li>
+                                <li><strong>Soil Type:</strong> Well-drained sandy or loamy soil</li>
+                            </ul>
+                            <button class="btn btn-button p-button"><a href="#avocado" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/avocado.png" alt="avocado" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                        </div>
+                    <!-- modal for card -->
+                    <div class="modal" id="avocado" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <h2 class="modal-title" style="color: #3b5732;">Avocado's</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <h4>Avocado Planting Guide:</h4><hr>
+                                        <li>Choose a sunny, frost-free site with well-drained soil.</li>
+                                        <li>Dig a hole twice as wide and deep as the root ball.</li>
+                                        <li>Plant grafted seedlings to ensure fruit quality.</li>
+                                        <li>Backfill with soil, firm gently, and water thoroughly.</li>
+                                        <li>Mulch around the base to retain moisture and suppress weeds.</li>
+                                        <li>Water regularly but avoid waterlogging.</li>
+                                        <li>Fertilize 3-4 times per year with balanced fertilizer.</li>
+                                        <li>Prune to maintain shape and remove dead branches.</li>
+                                        <li>After 3-4 years, enjoy fresh avocados from your tree!</li>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="vege">
+                <div class="row mt-4 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/tomato.png" alt="tomato" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Tomato</h2><hr>
+                                <p>Tomatoes are juicy vegetables used fresh, cooked, or in sauces and salads.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained loamy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#tomato" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="tomato" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Tomato's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Tomato Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Choose a sunny site with well-drained soil.</li>
+                                                <li>Sow seeds indoors 6-8 weeks before last frost or buy seedlings.</li>
+                                                <li>Transplant seedlings after danger of frost, spacing 18-24 inches apart.</li>
+                                                <li>Water regularly to keep soil moist but not soggy.</li>
+                                                <li>Stake or cage plants for support.</li>
+                                                <li>Fertilize every 3-4 weeks with balanced fertilizer.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Harvest when fruits are fully colored and firm.</li>
+                                                <li>After 2-3 months, enjoy your fresh tomatoes!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/carrot.png" alt="carrot" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Carrot</h2><hr>
+                                <p>Carrots are root vegetables enjoyed raw, cooked, or juiced for their sweet flavor and crunch.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1 liter per hour</li>
+                                    <li><strong>Soil Type:</strong> Loose, sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#carrot" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="carrot" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Carrot's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Carrot Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Prepare loose, deep soil free of stones.</li>
+                                                <li>Sow seeds directly 1/4 inch deep in rows 12 inches apart.</li>
+                                                <li>Thin seedlings to 2 inches apart after sprouting.</li>
+                                                <li>Keep soil consistently moist.</li>
+                                                <li>Mulch to retain moisture and prevent weeds.</li>
+                                                <li>Fertilize lightly with compost or balanced fertilizer.</li>
+                                                <li>Watch for carrot flies and pests.</li>
+                                                <li>Harvest when roots are bright orange and mature size.</li>
+                                                <li>After 2-3 months, enjoy your crunchy carrots!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/lettuce.png" alt="lettuce" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Lettuce</h2><hr>
+                                <p>Lettuce is a leafy vegetable enjoyed fresh in salads and sandwiches for its crisp texture.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 4 to 6 hours partial sun</li>
+                                    <li><strong>Water Needs:</strong> 1 liter per hour</li>
+                                    <li><strong>Soil Type:</strong> Moist, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#lettuce" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="lettuce" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Lettuce's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Lettuce Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly or transplant seedlings in early spring or fall.</li>
+                                                <li>Space seeds or plants 8-12 inches apart.</li>
+                                                <li>Keep soil moist but not soggy.</li>
+                                                <li>Mulch to retain moisture and keep roots cool.</li>
+                                                <li>Fertilize lightly with compost or balanced fertilizer.</li>
+                                                <li>Harvest outer leaves or whole heads as needed.</li>
+                                                <li>Protect from slugs and aphids.</li>
+                                                <li>Harvest before plants bolt (flower).</li>
+                                                <li>After 1-2 months, enjoy fresh lettuce leaves!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/cucumber.png" alt="cucumber" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Cucumber</h2><hr>
+                                <p>Cucumbers are vining vegetables with crisp, refreshing fruits used in salads and pickles.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#cucumber" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="cucumber" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Cucumber's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Cucumber Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after frost danger or start indoors 2 weeks early.</li>
+                                                <li>Space plants 12-18 inches apart in rows or hills.</li>
+                                                <li>Provide a trellis or let vines sprawl.</li>
+                                                <li>Water deeply and regularly, especially during fruiting.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Fertilize every 3-4 weeks with balanced fertilizer.</li>
+                                                <li>Harvest when fruits are medium-sized and firm.</li>
+                                                <li>Watch for powdery mildew and cucumber beetles.</li>
+                                                <li>After 1-2 months, enjoy your fresh cucumbers!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/eggplant.png" alt="eggplant" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Eggplant</h2><hr>
+                                <p>Eggplants are glossy purple vegetables used in grilling, roasting, and stews.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained loamy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#eggplant" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="eggplant" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Eggplant's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Eggplant Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Start seeds indoors 8-10 weeks before last frost or buy seedlings.</li>
+                                                <li>Transplant after frost, spacing 18-24 inches apart.</li>
+                                                <li>Water regularly to keep soil moist but not soggy.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Fertilize every 3-4 weeks with balanced fertilizer.</li>
+                                                <li>Stake plants if needed for support.</li>
+                                                <li>Harvest when fruits are glossy and firm.</li>
+                                                <li>Watch for flea beetles and aphids.</li>
+                                                <li>After 2-3 months, enjoy your eggplants!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/spinach.png" alt="spinach" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Spinach</h2><hr>
+                                <p>Spinach is a leafy green rich in iron and vitamins, used in salads, cooking, and smoothies.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 4 to 6 hours partial sun</li>
+                                    <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Moist, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#spinach" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="spinach" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Spinach's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Spinach Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly in early spring or fall.</li>
+                                                <li>Space seeds 2 inches apart in rows 12 inches apart.</li>
+                                                <li>Keep soil moist for good germination.</li>
+                                                <li>Thin seedlings to 4 inches apart.</li>
+                                                <li>Mulch to retain moisture and keep roots cool.</li>
+                                                <li>Fertilize lightly with compost or balanced fertilizer.</li>
+                                                <li>Harvest outer leaves as needed.</li>
+                                                <li>Protect from leaf miners and slugs.</li>
+                                                <li>After 1-2 months, enjoy fresh spinach!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/bell pepper.png" alt="bell pepper" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Bell Pepper</h2><hr>
+                                <p>Bell peppers are sweet, crunchy vegetables used in salads, stir-fries, and grilling.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 to 8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained loamy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#bellpepper" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="bellpepper" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Bell Pepper's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Bell Pepper Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Start seeds indoors 8 weeks before last frost or buy seedlings.</li>
+                                                <li>Transplant after frost, spacing 18-24 inches apart.</li>
+                                                <li>Water regularly to keep soil moist but not soggy.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Fertilize every 3-4 weeks with balanced fertilizer.</li>
+                                                <li>Stake plants if needed for support.</li>
+                                                <li>Harvest when peppers reach desired color and size.</li>
+                                                <li>Watch for aphids and spider mites.</li>
+                                                <li>After 2-3 months, enjoy your bell peppers!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/broccoli.png" alt="broccoli" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Broccoli</h2><hr>
+                                <p>Broccoli is a nutritious green vegetable eaten steamed, roasted, or raw in salads.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Fertile, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#broccoli" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="broccoli" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Broccoli's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Broccoli Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Start seeds indoors 6-8 weeks before last frost or buy seedlings.</li>
+                                                <li>Transplant into garden, spacing 18 inches apart.</li>
+                                                <li>Keep soil moist and cool.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Fertilize every 3-4 weeks with balanced fertilizer.</li>
+                                                <li>Watch for cabbage worms and aphids.</li>
+                                                <li>Harvest heads when tight and green.</li>
+                                                <li>Cut side shoots for continued harvest.</li>
+                                                <li>After 2-3 months, enjoy your broccoli!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/radish.png" alt="radish" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Radish</h2><hr>
+                                <p>Radishes are fast-growing root vegetables eaten raw in salads for their peppery crunch.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1 liter per hour</li>
+                                    <li><strong>Soil Type:</strong> Loose, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#radish" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="radish" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Radish's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Radish Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly 1/2 inch deep in rows 12 inches apart.</li>
+                                                <li>Thin seedlings to 2 inches apart.</li>
+                                                <li>Keep soil moist for rapid growth.</li>
+                                                <li>Mulch to retain moisture and prevent weeds.</li>
+                                                <li>Harvest when roots are 1 inch in diameter.</li>
+                                                <li>Replant every 2 weeks for continuous harvest.</li>
+                                                <li>Watch for root maggots and flea beetles.</li>
+                                                <li>After 3-4 weeks, enjoy your crisp radishes!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/onion.png" alt="onion" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Onion</h2><hr>
+                                <p>Onions are essential kitchen bulbs used fresh, cooked, or pickled for flavor in many dishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Loose, well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#onion" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="onion" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Onion's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Onion Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Plant sets or seedlings 1 inch deep, 4 inches apart.</li>
+                                                <li>Keep soil moist but not soggy.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Fertilize lightly with nitrogen-rich fertilizer.</li>
+                                                <li>Remove flower stalks to encourage bulb growth.</li>
+                                                <li>Harvest when tops fall over and bulbs are mature.</li>
+                                                <li>Cure bulbs in a dry, airy place before storage.</li>
+                                                <li>Watch for onion flies and thrips.</li>
+                                                <li>After 3-4 months, enjoy your onions!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane" id="herbs">
+                <div class="row mt-4 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/basil.png" alt="basil" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Basil</h2><hr>
+                                <p>Basil is a fragrant herb used in pesto, salads, and Italian dishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained, fertile loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#basil" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="basil" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Basil's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Basil Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds or plant seedlings after frost danger.</li>
+                                                <li>Space plants 8-12 inches apart.</li>
+                                                <li>Water regularly to keep soil moist.</li>
+                                                <li>Pinch tips to encourage bushy growth.</li>
+                                                <li>Harvest leaves as needed.</li>
+                                                <li>Fertilize monthly with balanced fertilizer.</li>
+                                                <li>Remove flower buds to prolong harvest.</li>
+                                                <li>Protect from aphids and slugs.</li>
+                                                <li>After 1-2 months, enjoy fresh basil!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/mint.png" alt="mint" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Mint</h2><hr>
+                                <p>Mint is a refreshing herb used in teas, desserts, salads, and sauces.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 4-6 hours partial sun</li>
+                                    <li><strong>Water Needs:</strong> 1 liter per hour</li>
+                                    <li><strong>Soil Type:</strong> Moist, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#mint" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="mint" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Mint's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Mint Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Plant cuttings or root divisions in spring.</li>
+                                                <li>Space plants 12-18 inches apart.</li>
+                                                <li>Keep soil moist and mulch to retain moisture.</li>
+                                                <li>Harvest leaves regularly to encourage growth.</li>
+                                                <li>Fertilize lightly with compost.</li>
+                                                <li>Contain roots to prevent spreading.</li>
+                                                <li>Watch for spider mites and aphids.</li>
+                                                <li>Cut back plants to rejuvenate.</li>
+                                                <li>After 1-2 months, enjoy fresh mint!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/parsely.png" alt="parsley" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Parsley</h2><hr>
+                                <p>Parsley is a versatile herb used as a garnish or flavoring in many dishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.7 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Rich, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#parsley" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="parsley" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Parsley's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Parsley Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly or transplant seedlings in spring.</li>
+                                                <li>Space plants 6-8 inches apart.</li>
+                                                <li>Keep soil moist for best growth.</li>
+                                                <li>Fertilize monthly with balanced fertilizer.</li>
+                                                <li>Harvest outer leaves as needed.</li>
+                                                <li>Mulch to retain moisture and suppress weeds.</li>
+                                                <li>Watch for caterpillars and aphids.</li>
+                                                <li>Trim flower stalks to prolong harvest.</li>
+                                                <li>After 2-3 months, enjoy fresh parsley!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/chives.png" alt="chives" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Chives</h2><hr>
+                                <p>Chives are mild onion-flavored herbs used in salads, soups, and garnishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Moist, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#chives" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="chives" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Chives's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Chives Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds or plant clumps in spring.</li>
+                                                <li>Space plants 6-8 inches apart.</li>
+                                                <li>Water regularly to keep soil moist.</li>
+                                                <li>Harvest leaves as needed, cutting close to the base.</li>
+                                                <li>Fertilize lightly with compost.</li>
+                                                <li>Divide clumps every 2-3 years.</li>
+                                                <li>Remove flower heads to prolong leaf harvest.</li>
+                                                <li>Watch for onion flies and aphids.</li>
+                                                <li>After 1-2 months, enjoy fresh chives!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/cilantro.png" alt="cilantro" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Cilantro</h2><hr>
+                                <p>Cilantro is a fast-growing herb used in salsas, salads, and Asian cuisine.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 4-6 hours partial sun</li>
+                                    <li><strong>Water Needs:</strong> 0.7 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Moist, well-drained loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#cilantro" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="cilantro" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Cilantro's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Cilantro Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly in early spring or fall.</li>
+                                                <li>Space plants 6-8 inches apart.</li>
+                                                <li>Keep soil moist for best growth.</li>
+                                                <li>Harvest leaves as needed.</li>
+                                                <li>Fertilize lightly with compost.</li>
+                                                <li>Mulch to retain moisture and keep roots cool.</li>
+                                                <li>Remove flower stalks to prolong harvest.</li>
+                                                <li>Watch for aphids and leaf miners.</li>
+                                                <li>After 1-2 months, enjoy fresh cilantro!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/oregano.png" alt="oregano" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Oregano</h2><hr>
+                                <p>Oregano is a robust herb used in Mediterranean and pizza dishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained, sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#oregano" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="oregano" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Oregano's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Oregano Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds or plant cuttings in spring.</li>
+                                                <li>Space plants 12 inches apart.</li>
+                                                <li>Water when soil is dry to the touch.</li>
+                                                <li>Harvest leaves before flowering for best flavor.</li>
+                                                <li>Fertilize lightly with compost.</li>
+                                                <li>Prune to encourage bushy growth.</li>
+                                                <li>Watch for spider mites and aphids.</li>
+                                                <li>Mulch to retain moisture and control weeds.</li>
+                                                <li>After 2-3 months, enjoy fresh oregano!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/rosemary.png" alt="rosemary" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Rosemary</h2><hr>
+                                <p>Rosemary is a woody herb used for flavoring meats, breads, and stews.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained, sandy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#rosemary" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="rosemary" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Rosemary's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Rosemary Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Plant cuttings or seedlings in spring.</li>
+                                                <li>Space plants 18-24 inches apart.</li>
+                                                <li>Water when soil is dry; avoid overwatering.</li>
+                                                <li>Harvest sprigs as needed.</li>
+                                                <li>Fertilize lightly with compost.</li>
+                                                <li>Prune to maintain shape and encourage growth.</li>
+                                                <li>Protect from extreme cold.</li>
+                                                <li>Watch for spider mites and aphids.</li>
+                                                <li>After 2-3 months, enjoy fresh rosemary!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/thaibasil.png" alt="thai basil" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Thai Basil</h2><hr>
+                                <p>Thai basil is a spicy-sweet herb used in Southeast Asian cuisine and curries.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.7 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained, fertile loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#thaibasil" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="thaibasil" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Thai Basil's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Thai Basil Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds or plant seedlings after frost danger.</li>
+                                                <li>Space plants 12 inches apart.</li>
+                                                <li>Water regularly to keep soil moist.</li>
+                                                <li>Pinch tips to encourage bushy growth.</li>
+                                                <li>Harvest leaves as needed.</li>
+                                                <li>Fertilize monthly with balanced fertilizer.</li>
+                                                <li>Remove flower buds to prolong harvest.</li>
+                                                <li>Watch for aphids and slugs.</li>
+                                                <li>After 1-2 months, enjoy fresh Thai basil!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/dill.png" alt="dill" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Dill</h2><hr>
+                                <p>Dill is a delicate herb used in pickling, salads, and fish dishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.7 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained, sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#dill" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="dill" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Dill's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Dill Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly in spring after frost.</li>
+                                                <li>Space plants 12 inches apart.</li>
+                                                <li>Water regularly to keep soil moist.</li>
+                                                <li>Harvest leaves as needed.</li>
+                                                <li>Fertilize lightly with compost.</li>
+                                                <li>Stake tall plants to prevent lodging.</li>
+                                                <li>Remove flower heads to prolong leaf harvest.</li>
+                                                <li>Watch for aphids and caterpillars.</li>
+                                                <li>After 1-2 months, enjoy fresh dill!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/sage.png" alt="sage" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Sage</h2><hr>
+                                <p>Sage is a savory herb used in stuffing, meats, and herbal teas.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 0.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained, sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#sage" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="sage" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Sage's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Sage Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Plant cuttings or seedlings in spring.</li>
+                                                <li>Space plants 18-24 inches apart.</li>
+                                                <li>Water when soil is dry to the touch.</li>
+                                                <li>Harvest leaves as needed.</li>
+                                                <li>Fertilize lightly with compost.</li>
+                                                <li>Prune to maintain shape and encourage growth.</li>
+                                                <li>Protect from extreme cold.</li>
+                                                <li>Watch for spider mites and aphids.</li>
+                                                <li>After 2-3 months, enjoy fresh sage!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane" id="protein">
+                <div class="row mt-4 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/soybean.png" alt="soybean" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Soybean</h2><hr>
+                                <p>Soybeans are a staple protein-rich legume in Myanmar, used in tofu, soy milk, and traditional dishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained, fertile loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#soybean" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="soybean" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Soybean's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Soybean Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost.</li>
+                                                <li>Space seeds 2-4 inches apart in rows 18-24 inches apart.</li>
+                                                <li>Water regularly to keep soil moist.</li>
+                                                <li>Fertilize with compost or balanced fertilizer.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for aphids and beetles.</li>
+                                                <li>Harvest when pods are plump and yellowing.</li>
+                                                <li>Dry beans before storage.</li>
+                                                <li>After 3-4 months, enjoy your soybeans!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/blackgram.png" alt="black gram" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Black Gram (Urad Bean)</h2><hr>
+                                <p>Black gram is a protein-rich pulse widely used in Myanmar curries, salads, and snacks.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1 liter per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#blackgram" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="blackgram" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Black Gram's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Black Gram Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost.</li>
+                                                <li>Space seeds 4 inches apart in rows 18 inches apart.</li>
+                                                <li>Water regularly, especially during flowering.</li>
+                                                <li>Fertilize with compost.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for pod borers and aphids.</li>
+                                                <li>Harvest when pods turn black and dry.</li>
+                                                <li>Thresh and dry beans before storage.</li>
+                                                <li>After 3-4 months, enjoy your black gram!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/peanut.png" alt="peanut" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Peanut</h2><hr>
+                                <p>Peanuts are a major protein source in Myanmar, used roasted, boiled, or in peanut oil and sauces.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.5 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#peanut" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="peanut" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Peanut's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Peanut Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost, 2 inches deep.</li>
+                                                <li>Space seeds 6 inches apart in rows 18 inches apart.</li>
+                                                <li>Water regularly, especially during pod formation.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for leaf spot and aphids.</li>
+                                                <li>Harvest when leaves yellow and pods mature.</li>
+                                                <li>Dry pods before storage.</li>
+                                                <li>After 4-5 months, enjoy your peanuts!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/pigeonpea.png" alt="pigeon pea" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Pigeon Pea</h2><hr>
+                                <p>Pigeon peas are a traditional Myanmar protein source, used in soups, curries, and dal.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#pigeonpea" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="pigeonpea" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Pigeon Pea's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Pigeon Pea Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost.</li>
+                                                <li>Space seeds 12 inches apart in rows 24 inches apart.</li>
+                                                <li>Water regularly, especially during flowering and pod set.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for pod borers and aphids.</li>
+                                                <li>Harvest when pods are mature and dry.</li>
+                                                <li>Thresh and dry peas before storage.</li>
+                                                <li>After 4-5 months, enjoy your pigeon peas!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/chickpea.png" alt="chickpea" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Chickpea</h2><hr>
+                                <p>Chickpeas are protein-packed legumes used in salads, curries, and Myanmar snacks like "tohu."</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#chickpea" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="chickpea" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Chickpea's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Chickpea Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost, 1 inch deep.</li>
+                                                <li>Space seeds 6 inches apart in rows 18 inches apart.</li>
+                                                <li>Water regularly, especially during flowering.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for pod borers and aphids.</li>
+                                                <li>Harvest when pods are dry and brown.</li>
+                                                <li>Thresh and dry chickpeas before storage.</li>
+                                                <li>After 3-4 months, enjoy your chickpeas!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4 justify-content-center">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/greengram.png" alt="green gram" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Green Gram (Mung Bean)</h2><hr>
+                                <p>Green gram is a popular Myanmar pulse, rich in protein and used in soups, desserts, and salads.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#greengram" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="greengram" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Green Gram's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Green Gram Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost.</li>
+                                                <li>Space seeds 4 inches apart in rows 18 inches apart.</li>
+                                                <li>Water regularly, especially during flowering.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for pod borers and aphids.</li>
+                                                <li>Harvest when pods are dry and brown.</li>
+                                                <li>Thresh and dry beans before storage.</li>
+                                                <li>After 2-3 months, enjoy your green gram!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/broadbean.png" alt="broad bean" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Broad Bean</h2><hr>
+                                <p>Broad beans are high-protein legumes, often eaten fresh or dried in Myanmar dishes.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained loamy soil</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#broadbean" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="broadbean" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Broad Bean's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Broad Bean Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly in early spring.</li>
+                                                <li>Space seeds 6 inches apart in rows 18 inches apart.</li>
+                                                <li>Water regularly, especially during flowering.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for aphids and blackfly.</li>
+                                                <li>Harvest when pods are plump and green.</li>
+                                                <li>Dry beans before storage.</li>
+                                                <li>After 3-4 months, enjoy your broad beans!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/lablabbean.png" alt="lablab bean" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Lablab Bean</h2><hr>
+                                <p>Lablab beans are grown in Myanmar for their protein-rich seeds and edible pods.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#lablab" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="lablab" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Lablab Bean's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Lablab Bean Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost.</li>
+                                                <li>Space seeds 12 inches apart in rows 24 inches apart.</li>
+                                                <li>Water regularly, especially during flowering.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for aphids and pod borers.</li>
+                                                <li>Harvest when pods are mature and dry.</li>
+                                                <li>Dry beans before storage.</li>
+                                                <li>After 3-4 months, enjoy your lablab beans!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/sesame.png" alt="sesame" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Sesame</h2><hr>
+                                <p>Sesame seeds are a nutritious Myanmar protein source, used in snacks, sweets, and oil.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1 liter per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#sesame" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="sesame" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Sesame's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Sesame Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost.</li>
+                                                <li>Space seeds 6 inches apart in rows 18 inches apart.</li>
+                                                <li>Water regularly, especially during flowering.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Watch for leaf spot and aphids.</li>
+                                                <li>Harvest when capsules turn brown and dry.</li>
+                                                <li>Dry seeds before storage.</li>
+                                                <li>After 3-4 months, enjoy your sesame seeds!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 mt-4 cricle">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <img src="image/winged.png" alt="winged bean" width="200px" height="auto" class="rotate-img">
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <h2>Winged Bean</h2><hr>
+                                <p>Winged beans are grown in Myanmar for their protein-rich pods, seeds, and leaves, all edible.</p>
+                                <h4>Growing Requirements:</h4>
+                                <ul>
+                                    <li><strong>Sunlight Needed:</strong> 6-8 hours full sun daily</li>
+                                    <li><strong>Water Needs:</strong> 1.2 liters per hour</li>
+                                    <li><strong>Soil Type:</strong> Well-drained sandy loam</li>
+                                </ul>
+                                <button class="btn btn-button p-button"><a href="#wingedbean" class="nav-link" data-bs-toggle="modal">Explore More!</a></button>
+                            </div>
+                        </div>
+                        <div class="modal" id="wingedbean" data-bs-backdrop="static">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header justify-content-center">
+                                        <h2 class="modal-title">Winged Bean's information</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <h4>Winged Bean Planting Guide:</h4><hr>
+                                            <ul>
+                                                <li>Sow seeds directly after last frost.</li>
+                                                <li>Space seeds 12 inches apart in rows 24 inches apart.</li>
+                                                <li>Water regularly, especially during flowering and pod set.</li>
+                                                <li>Fertilize with compost or manure.</li>
+                                                <li>Weed regularly to reduce competition.</li>
+                                                <li>Provide trellis or support for vines.</li>
+                                                <li>Harvest pods when young and tender.</li>
+                                                <li>Harvest seeds when mature and dry.</li>
+                                                <li>After 3-4 months, enjoy your winged beans!</li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-button c-button" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>     
+        </div>
+    <!-- Edible end -->
+
+    <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+    <a href="#top" class="btn scroll-up">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+</body>
+</html>

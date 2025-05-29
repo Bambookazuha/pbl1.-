@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Growing Roots | Volunteers Calling</title>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="image/favi.png" />
+ <!-- Bootstrap CDN -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+ <!-- External CSS -->
+ <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="nav.css">
+ <link rel="stylesheet" href="footer.css">
+ <!-- Bootstrap Icons -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body class="volunteer-page">
+  <a href="#top" class="btn scroll-up">
+        <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link active-state" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="hero-image"></div>
+  <div class="hero-text">
+    <h1>Grow With Us! 🌱</h1>
+    <h2>Be a part of something meaningful. Join hands to grow a greener tomorrow.</h2>
+    <a href="#form-card" class="cta-button">Become a Volunteer</a>
+  </div>
+  <div class="gain-container">
+    <div class="gain-title">What You'll Gain</div>
+    <div class="gain-grid">
+      <div class="gain-buttons">
+        <div class="gain-button benefit1">"Gain hands-on experience in various aspects of home gardening."</div>
+        <div class="gain-button benefit2">"Connect with a community of passionate gardeners and like-minded individuals."</div>
+        <div class="gain-button benefit1">"Make a tangible difference in promoting sustainable living and environmental awareness."</div>
+        <div class="gain-button benefit2">"Develop new skills and knowledge in horticulture."</div>
+        <div class="gain-button benefit1">"Receive invitations to exclusive volunteer appreciation events and workshops."</div>
+      </div>
+      <div class="gain-videos">
+       
+        <img src="finalimg/heart.jpeg " alt="Dirty hands in soil">
+        <img src= "finalimg/grandpa.jpeg"  alt="Dirty hands in soil">
+        <img src="finalimg/stepbystep.jpeg" alt="Tree in hand">
+        <img src="finalimg/blooming.jpeg" alt="Tree in hand">
+      </div>
+      
+    </div>
+  </div>
+  
+  <section class="volunteer-section">
+    <div class="roles-wrapper">
+      <h2 class="volunteer-title">Volunteer Roles</h2>
+     
+      <div class="roles-list">
+        <div class="role-box">
+          <div class="role-number">01</div>
+          <div class="role-text">
+            <h3>  Garden Maintenance</h3>
+            <p>Help with watering, weeding, composting, and keeping the garden tidy and healthy.</p>
+          </div>
+        </div>
+
+        <div class="role-box">
+          <div class="role-number">02</div>
+          <div class="role-text">
+            <h3>Workshop Assistant</h3>
+            <p>Support gardening or sustainability workshops by setting up materials and helping participants.</p>
+          </div>
+        </div>
+
+        <div class="role-box">
+          <div class="role-number">03</div>
+          <div class="role-text">
+            <h3>Composting Coordinator</h3>
+            <p>Manage compost bins and guide others on how to compost properly.</p>
+         </div>
+        </div>
+
+      
+        <div class="role-box">
+          <div class="role-number">04</div>
+          <div class="role-text">
+            <h3>Seed & Plant Exchange</h3>
+            <p>Organize donated seeds and plants, and help run exchange events for the community.</p>
+          </div>
+        </div>
+
+        <div class="role-box">
+          <div class="role-number">05</div>
+          <div class="role-text">
+            <h3>Community Outreach</h3>
+            <p>Promote events, recruit volunteers, and build local connections through flyers and social media.</p>
+          </div>
+        </div>
+        <div class="role-box">
+            <div class="role-number">06</div>
+            <div class="role-text">
+              <h3> Accessibility Support</h3>
+              <p>Assist visitors with mobility or language needs so everyone can join garden activities.
+
+              </p>
+            </div>
+          </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="form-section">
+    <div class="side-animation left">
+      <div class="image-track">
+        <img src="finalimg/webpot.png" alt="webpot">
+        <img src="finalimg/twoclorpot.png" alt="websiteplant">
+        <img src="finalimg/greypot.png" alt="greypot">
+        <img src="finalimg/darkgreypot.png" alt="darkgreypot">
+      </div>
+    </div>
+    <div class="form-card" id="form-card">
+      <h2>Join Our Volunteer Team</h2>
+      <!-- your form elements stay the same -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+      <label for="role">Which role are you applying for?</label>
+      <select id="role" name="role" required>
+        <option value="" disabled selected>Select a role</option>
+        <option>Garden Maintenance</option>
+        <option>Workshop Assistant</option>
+        <option>Composting Coordinator</option>
+        <option>Seed & Plant Exchange</option>
+        <option>Community Outreach</option>
+        <option>Accessibility Support</option>
+      </select>
+      <label for="availability">When are you available to volunteer?</label>
+      <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Weekdays after 3pm">
+      <label for="experience">Do you have any related experience?</label>
+      <textarea id="experience" name="experience" placeholder="Let us know your skills or past volunteer work..."></textarea>
+      <label for="motivation">Why do you want to volunteer with us?</label>
+      <textarea id="motivation" name="motivation" placeholder="Tell us why you're interested..."></textarea>
+      <button type="submit">Submit Application</button>
+    </div>
+  
+    <div class="side-animation right">
+      <div class="image-track ">
+        <img src="finalimg/whitepot.png" alt="webpot">
+        <img src="finalimg/brownpot.png" alt="websiteplant">
+        <img src="finalimg/blackpot.png" alt="greypot">
+        <img src="finalimg/darkblue.png" alt="darkgreypot">
+        <img src="finalimg/twoclorpot.png" alt="webpot">
+        <img src="finalimg/cylongpot.png" alt="websiteplant">
+      </div>
+    </div>
+  </section>
+    <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+    <a href="#top" class="btn scroll-up">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+</body>
+</html>
+

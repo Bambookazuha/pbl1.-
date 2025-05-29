@@ -1,0 +1,68 @@
+
+.btn.c-button {
+    background-color: #f5fffa;
+    color:#2e3c21;
+    border: 3px solid #2e3c21;
+    padding: 8px 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.btn.c-button:hover {
+    color: white;
+    background-color:  #91b257;
+    transform: scale(1.05);
+}
+.rotate-img {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(0.8);
+    }
+}
+.btn.p-button {
+    width: 150px;
+    background-color: #f5fffa;
+    color:#2e3c21;
+    border: 3px solid #2e3c21;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.btn.p-button:hover {
+    color: white;
+    background-color:  #91b257;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+.btn.p-button {
+    width: 500px;
+    }
+}
+.btn.c-button {
+    background-color: #f5fffa;
+    color:#2e3c21;
+    border: 3px solid #2e3c21;
+    padding: 8px 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.btn.c-button:hover {
+    color: white;
+    background-color:  #91b257;
+    transform: scale(1.05);
+}    

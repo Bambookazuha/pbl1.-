@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+.modal-title {
+    font-size: 25px;
+    color: #3b5732;
+    font-weight: bold;
+}
+nav.navbar {
+    background-color: #f5fffa;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px;
+    color: #3b5732;
+
+}
+
+.scroll-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3b5732;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+              
+.scroll-up:hover {
+    background: #3b5732;
+}
+
+.bi-arrow-up-square-fill {
+    font-size: 25px;
+    color: white;
+}
+
+
+nav.navbar:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    background-color: #91b256;
+}
+
+nav.navbar:hover .nav-item a{
+    color: #f5fffa;
+}
+
+.navbar-nav .nav-link {
+    color: #3b5732;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    margin-left:10px;
+ }
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color:#3b5732;
+    border-radius: 0.35rem;
+    text-decoration: none;
+}
+.offcanvas{
+        background-color: #91b257;
+      }
+.btn.btn-signup {
+    background-color: #f5fffa;
+    color:#3b5732;
+    border: 3px solid #3b5732;
+    padding: 0.45rem 1.3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn.btn-signup:hover{
+    background-color: #f5fffa;
+    color:#3b5732;
+    border: 3px solid #3b5732;
+    padding: 0.45rem 1.3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn.btn-login {
+    background-color: #f5fffa;
+    color:#3b5732;
+    border: 3px solid #3b5732;
+    padding: 0.45rem 1.3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-left: 20px;
+}
+
+.btn.btn-login:hover {
+    background-color: #f5fffa;
+    color:#3b5732;
+    border: 3px solid #3b5732;
+    padding: 0.45rem 1.3rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-left: 20px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.dropdown-menu{
+    background-color: #f5fffa;
+}
+
+nav.navbar:hover .dropdown-menu{
+    background-color: #91b256;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-link.active.home{
+    color: #3b5732;
+}
+
+.dropdown-menu {
+    top: 100%;
+    left: 15px;
+    min-width: 170px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+ 
+.dropdown-menu a {
+    color: #3b5732;
+    font-size: 16px;
+    padding: 12px 30px;
+    display: flex;
+    margin: 0;
+}
+
+.dropdown-menu a:hover{
+    background-color: #3b5732;
+    font-size: 16px;
+    padding: 12px 30px;
+    display: flex;
+    margin: 0;
+    color: #3b5732;
+}
+
+
+.btn-group {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.form-label {
+    color: rgb(0, 0, 0);
+    
+}
+
+.form-control {
+    box-shadow:1px 1px rgb(212, 210, 210);
+}
+
+.form-check-label {
+    color: rgb(0, 0, 0);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.button {
+    width: 100%;
+    box-shadow:1px 1px rgb(212, 210, 210);
+}
+.submit-button {
+    width: 450px;
+    margin-top: 1.5rem;
+    background-color: #f5fffa;
+    color:#2e3c21;
+    border: 3px solid #2e3c21;
+    padding: 8px 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.submit-button:hover {
+    color: white;
+    background-color:  #91b257;
+}
+.close-button {
+    width: 65px;
+    background-color: #f5fffa;
+    color:#2e3c21;
+    border: 3px solid #2e3c21;
+    padding: 8px 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.close-button:hover {
+    color: white;
+    background-color:  #91b257;
+}
+.navbar-nav .nav-item .active-state {
+    color: #f5fffa;
+    background-color: #3b5732;
+    border-radius: 5px;
+}

@@ -1,0 +1,118 @@
+footer {
+    background-color: #f5fffa;
+    color: black;
+}
+footer:hover {
+    background-color: #91b257;
+    color: white;
+    font-weight: bold;
+}
+footer h1, footer h2, footer h3 {
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+footer p {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+footer:hover .qlist a {
+  color: white;
+  font-weight: bold;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #f5fffa;
+    transition: 0.3s ease;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+footer .text-center {
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer .list {
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+footer ul li {
+    font-size: 17px;
+    list-style-type: none;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+footer ul li:hover {
+    transform: translateX(5px);
+}
+
+footer .bi-facebook {
+    font-size: 35px;
+    color: rgb(39, 39, 117);
+    transition: transform 0.3s ease;
+}
+footer:hover .bi-facebook {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+footer .bi-instagram {
+    font-size: 35px;
+    color: #e1306c;
+    transition: transform 0.3s ease;
+}
+footer:hover .bi-instagram {
+    font-size: 35px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+footer .bi-youtube {
+    font-size: 35px;
+    color: rgb(192, 27, 27);
+    transition: transform 0.3s ease;
+}
+
+footer:hover .bi-youtube {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+footer .bi-telegram {
+    font-size: 35px;
+    color: rgb(106, 235, 239);
+    transition: transform 0.3s ease;
+}
+footer:hover .bi-telegram {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+footer .bi:hover {
+    transform: scale(1.1);
+}
+
+footer .col-md-4 {
+    padding-right: 150px;
+}
+
+

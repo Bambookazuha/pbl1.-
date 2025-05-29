@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growing Roots | Basic Garden Tools</title>
+  <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="image/favi.png" />
+  <!-- Bootstrap CDN -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Bootstap Icon Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ <!-- External CSS -->
+ <link rel="stylesheet" href="style2.css" />
+ <link rel="stylesheet" href="nav.css">
+ <link rel="stylesheet" href="footer.css">
+
+ 
+
+</head>
+<body class="garden-tools-page " background="finalimg/bgmoftool.png" >
+  <a href="#top" class="btn scroll-up">
+        <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- Navbar brand as a icon -->
+    <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_id">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-start" id="offcanvas_nav_id">
+        <div class="offcanvas-header">
+        <a href="index.html" class="navbar-brand ms-3"><img src="image/icon.png" alt="icon" width="70px" height="70px"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="whygardeninghelps.html">Gardening Helps</a></li>
+            <li class="nav-item"><a class="nav-link" href="adaptingresources.html">Resources</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tips</a>
+            <ul class="dropdown-menu">
+                    <li><a href="indoorgardening.html" class="dropdown-item">Indoor Gardening</a></li>
+                    <li><a href="outdoorgardening.html" class="dropdown-item">Outdoor Gardening</a></li>
+                    <li><a href="Seasonal.html" class="dropdown-item">Seasonal Plants</a></li>
+                    <li><a href="Edible.html" class="dropdown-item">Edible Plants</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="getinolve.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link active-state" href="gardentools.html">Equipment</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <a href="#login_modal" class="btn btn-signup" data-bs-toggle="modal">Log In</a>
+            <a href="#register_modal" class="btn btn-login" data-bs-toggle="modal">Sign Up</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- modal for register -->
+    <div class="modal" id="register_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Registeration form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action=""> 
+                    <!-- Sign up with -->
+                        <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
+
+                          <!-- line between -->
+                          <div class="d-flex align-items-center my-1">
+                            <div class="border border-dark" style="width: 50%;"></div>
+                            <div class="mx-2 text-dark">or</div>
+                            <div class="border border-dark" style="width: 50%;"></div>
+                        </div>
+
+                          <!-- Inputs -->
+                        <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">First Name: </label>
+                            <input type="text" class="form-control" name="fname" id="fname" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Last Name: </label>
+                            <input type="text" class="form-control" name="lname" id="lname">
+                        </div>
+                        <div class="mt-4">
+                            <label for="email" style="color: rgb(0, 0, 0);">Enter email address: </label>
+                            <input class="form-control my-2" type="email" name="email" id="email">
+                            <label for="password" style="color: rgb(0, 0, 0);">Password: </label>
+                            <input class="form-control my-2" type="password" name="password" id="password" placeholder="8+ characters">
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="checkbox">
+                            <label class="form-check-label">I agree to the <a href="#">Terms and conditions</a></label>
+                        </div>
+                        <label class="form-check-label mt-1">Already have an account? <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a></label>                        
+                        <div>
+                            <button type="submit" class="button btn submit-button mt-3">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    
+                </div>
+                <div class="modal-footer">
+                    <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for Log-in -->
+    <div class="modal" id="login_modal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login form</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
+                        <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
+                    <button class="btn close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="container py-5">
+    <div class="mb-4 text-start">
+      <h1 class="section-title">BASIC TOOLS</h1>
+      <h5 class="subtitle">FOR YOUR GARDEN JOURNEY</h5>
+    </div>
+
+    <!-- TOOL ITEMS -->
+    <div class="tool-wrapper">
+      <div class="tool-item">
+        <img src="finalimg/gloves.jpeg" alt="Gloves" class="tool-image">
+        <div class="tool-card">
+          <h3>Gloves</h3>
+          <p>Soft, protective gloves that keep your hands clean and safe while pulling weeds, planting seeds, or working with soil.</p>
+        </div>
+      </div>
+
+      <div class="tool-item">
+        <img src="finalimg/watergear.jpeg" alt="Water Gear" class="tool-image">
+        <div class="tool-card">
+          <h3>Water Gear</h3>
+          <p>Helpful tools like a watering can or hose that make it easy to give your plants the right amount of water every day.</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <img src="finalimg/greenfork.jpeg" alt="Garden Fork" class="tool-image">
+        <div class="tool-card">
+          <h3>Garden Fork</h3>
+          <p>A sturdy fork great for loosening soil, turning compost, or breaking up clumps in pots and garden beds.</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <img src="finalimg/Shovel.jpeg" alt="Shovel" class="tool-image">
+        <div class="tool-card">
+          <h3>Shovel</h3>
+          <p>A strong digging tool perfect for moving soil, planting trees, or clearing out space in larger garden areas.</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <img src="finalimg/bucket.jpeg" alt="Bucket" class="tool-image">
+        <div class="tool-card">
+          <h3>Bucket</h3>
+          <p>A lightweight bucket ideal for carrying soil, compost, water, or garden tools around your outdoor space.</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <img src="finalimg/handtrowel.jpeg" alt="Trowel" class="tool-image">
+        <div class="tool-card">
+          <h3>Trowel</h3>
+          <p>A small digging tool perfect for planting seeds, moving small plants, or digging holes for flowers in pots or garden beds.</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <img src="finalimg/pruningshears.jpeg" alt="Shears" class="tool-image">
+        <div class="tool-card">
+          <h3>Shears</h3>
+          <p>Sharp cutting tools used for trimming plants, shaping bushes, or removing dead leaves and branches neatly.</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <img src="finalimg/keenler.jpeg" alt="Kneeler" class="tool-image">
+        <div class="tool-card">
+          <h3>Kneeler</h3>
+          <p>A soft kneeling pad that helps protect your knees and makes gardening more comfortable when working close to the ground.</p>
+        </div>
+      </div>
+    </div>
+
+    <h4>Recyclable Items</h4>
+    <div class="card-container">
+    <div class="garden-tools-page-card">
+      <h2>Plastic Bottles</h2>
+      <img src="finalimg/plastic.jpeg" alt="Trade Offer Image" >
+      <p>Make self-watering planters using the bottom half and some string.</p>
+      <a href="https://youtu.be/PJ_j5HGy_a8?si=Apuwnl-SuzgGaQvA" target="_blank" class="yt-button">Watch YouTube Tutorial</a>
+  
+    
+    </div>
+
+    <div class="garden-tools-page-card">
+      <h2>Egg Cartons</h2>
+      <img src="finalimg/eggcartoon.jpeg" alt="Giveaway Image ">
+      <p>Start seeds in egg cartons and plant the whole thing later.</p>
+      <a href="https://youtu.be/U2755tUWxZY?si=6Le_IShXTu56zilL" target="_blank" class="yt-button">Watch YouTube Tutorial</a>
+    
+      </div>
+
+    <div class="garden-tools-page-card">
+      <h2>Tin Cans</h2>
+      <img src="finalimg/tincns.jpeg" alt="tin Image">
+      <p>Turn tin cans into cute herb pots with holes at the bottom.</p>
+      <a href="https://youtu.be/1fjMIci80Vk?si=EYxCKR1iZMiHpAOB" target="_blank" class="yt-button">Watch YouTube Tutorial</a>
+    </div>
+    <div class="garden-tools-page-card">
+      <h2>Used  Food Containers</h2>
+      <img src="finalimg/foodcon.jpeg" alt="contain Image">
+      <p> Use old containers as seed trays or mini greenhouses.</p>
+      <a href="https://youtu.be/uwz3plp7DhE?si=Nm2LUJ-_p2fIXtqd" target="_blank" class="yt-button">Watch YouTube Tutorial</a>
+      
+    </div>
+    <div class="garden-tools-page-card">
+      <h2>Cardboard Boxes</h2>
+      <img src="finalimg/cardboard.jpeg" alt="cardboard Image">
+      <p> Layer cardboard under soil to stop weeds and hold moisture.</p>
+      <a href="https://youtu.be/oX8gxKT3lsg?si=PuLWtikJ0jYWnCBA" target="_blank" class="yt-button">Watch YouTube Tutorial</a>
+        
+    </div>
+    <div class="garden-tools-page-card">
+      <h2>Newspaper Pots</h2>
+      <img src="finalimg/newspot.jpeg" alt="newspaper Image">
+      <p>Use newspaper pots to start seeds — biodegradable and easy to plant directly in the soil.</p>
+      <a href="https://youtu.be/7dlGQP81yfo?si=euYv_-PNegleUr9s" target="_blank" class="yt-button">Watch YouTube Tutorial</a>
+      
+    </div>
+    </div>
+  </div>
+  
+  <!-- Footer section start -->
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+      <div class="container">
+        <div class="row">
+ 
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
+            <p>
+              Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
+            </p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
+          </div>
+ 
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h3 class="ms-2">Quick Links</h3>
+            <ul class="list qlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="whygardeninghelps.html">Gardening Helps</a></li>
+              <li><a href="adaptingresources.html">Resources</a></li>
+              <li><a href="gardentools.html">Equipment</a></li>
+              <li><a href="getinolve.html">Get Involved</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Skills & Linguistics -->
+          <div class="col-md-3" style="text-align: start;">
+            <h3 class="ms-2">Featured Links</h3>
+            <ul class="list qlist">
+              <li><a href="indoorgardening.html">Indoor Gardening</a></li>
+              <li><a href="outdoorgardening.html">Outdoor Gardening</a></li>
+              <li><a href="Seasonal.html">Seasonal Plants</a></li>
+              <li><a href="Edible.html">Edible Plants</a></li>
+              <li><a href="volunteer.html">Volunteer calling</a></li>
+              <li><a href="gardendicuss.html">Garden Discussion</a></li>
+              <li><a href="seed&plant.html">Seeds & Plants Exchange</a></li>
+            </ul>
+          </div>
+ 
+          <!-- Social Media -->
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nerd.ynest/profilecard/"><i class="bi bi-instagram ms-3"></i></a>
+                <a href="https://t.me/nerdynest"><i class="bi bi-telegram ms-3"></i></a>
+                <a href="https://www.youtube.com/@Changechaserr"><i class="bi bi-youtube ms-3"></i></a>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+ 
+        <!-- Footer bottom -->
+        <div class="text-center mt-4">
+          <hr style="color: rgb(0, 0, 0);">
+          &copy; 2025 Growing Roots | All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+    <a href="#top" class="btn scroll-up">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+</body>
+</html>
